@@ -1,0 +1,41 @@
+Router
+--------------------
+Paso 1 - interfaces
+
+interface fx/x
+ip address x.x.x.x x.x.x.x
+ipv6 address xxxxxxx/64
+ipv6 address fe80::1 link-local
+description a
+no shutdown
+
+Paso 2 - Seguridad
+
+hostname algo
+enable secret cisco12345
+banner motd "a"
+service password-encryption
+username cisco secret cisco12345
+ip domain-name cisco.com
+crypto key generate rsa general-keys modulus 1024
+security passwords min-length 10
+login block-for 120 attempts 2 within 60
+
+Paso 3 - líneas
+
+line console 0/ vty 0 15
+password cisco12345
+login local
+transport input ssh
+no shutdown
+
+Paso 4 - switch
+(config)ip default gateway x.x.x.x
+
+Paso 5 - ips
+
+Poner ips en todos los pcs y gateways
+fe80::1 en default gateway ipv6
+
+
+

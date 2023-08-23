@@ -1,0 +1,121 @@
+------------Configuración básica del Router-------------
+
+enable
+conf t
+no ip domain-lookup
+ip domain-name cisco.com
+hostname R1
+enable secret class12345
+username cisco privilege 15 secret cisco
+crypto key generate rsa general-keys modulus 1024
+banner motd "a"
+service password-encryption
+security passwords min-lenght 10
+login block-for 120 attempts 2 within 30
+ipv6 unicast-routing
+
+------------lineas router-------------
+
+line con 0
+password cisco
+login
+exec-timeout 6
+logging synchronous
+
+line vty 0 15
+password cisco
+transport input ssh
+login local
+logging synchronous
+exec-timeout 6
+
+--------------interfaces-----------------
+interface g0/0
+ip address x.x.x.x x.x.x.x
+ipv6 address x::x/64
+ipv6 address x::x link-local
+description a
+no shutdown
+
+--------------VLAN(switch)-----------------------
+vlan x
+name nombre
+interface f0/0
+switchport mode trunk/access/dynamic(auto/desirable)
+switchport nonegotiate
+switchport trunk allowed/native vlan x,y,z
+switchport access vlan x
+switchport voice vlan x (vlan de voz)
+
+--------------Router on a stick------------------
+interface g0/0.x
+encapsulation dot1q x
+ip address x.x.x.x x.x.x.x
+exit
+interface g0/0
+no shutdown
+
+--------------STP--------------
+spanning-tree mode pvst/rapid-pvst
+spanning-tree vlan x root primary/priority 24576
+
+-------------Etherchannel---------------
+interface range f0/0-x
+channel-group 1 mode desirable (obliga a PagP)
+                     auto (espero a PagP)
+                     active(obliga a LACP)
+                     passive(espero a LACP)
+                     on (me la suda)
+interface port-channel 1
+switchport mode trunk
+
+----------------VTP-------------
+vtp domain CCNA
+vtp password cisco
+vtp mode server (hace de servidor)
+         client (hace de cliente)
+         transparent(no es cliente pero deja pasar la info)
+
+---------------DHCPv4--------------
+(Server)
+ip dhcp excluded-address x.x.x.inicio x.x.x.final
+ip dhcp pill Rx-Lan
+network x.x.x.x(red) x.x.x.x(mask)
+default-router x.x.x.x
+dns-server x.x.x.x
+(Relay)
+interface g0/0
+ip helper-address x.x.x.x (ip interfaz router server)
+(Cliente-server)
+interface g0/0
+ip address dhcp
+
+----------------DHCPv6--------------
+
+
+----------------HRSP----------------
+interface g0/0(la que no conecte con router)
+standby version 2
+standby 1 ip x.x.x.x(ip virtual)
+standby 1 priority 150
+standby preempt(al jefaso)
+
+---------------Seguridad en switch---------------
+switchport port-security
+switchport port-security mac-address xxxx(mac fija)
+                                     sticky(que la aprenda)
+                         maximun (macs maximas)
+                         violation protect (descarta)
+                                   restrict (descarta+log)
+                                   shutdown (apaga)
+spanning-tree portfast 
+spanning-tree bpduguard enable
+
+-------------Rutas estaticas--------------
+ip route x.x.x.x(red a la que vamos) x.x.x.x(mask de la red) x.x.x.x(ip del siguiente salto) s0/0/0(tu interfaz) 200(para que sea flotante)
+ip route 0.0.0.0 0.0.0.0 x.x.x.x (default)
+
+ipv6 route x::x/64 x:x:x::
+ipv6 route ::/0 x:x:x:: (default)
+ipv6 unicast-routing (importante!)
+

@@ -1,0 +1,103 @@
+Configurar OSPF
+++++++++++++++++++++++++++++
+enable 
+configure ter
+router ospf 10
+----------------------------
+Por interfaces:
+----------------------------
+interface g0/0/0
+ip ospf 10 area 0
+interface s0/1/0
+ip ospf 10 area 0
+----------------------------
+Por network: (dentro de la configuracion de ospf)
+----------------------------
+network 10.10.0.240 0.0.0.3 area 0
+network 10.10.0.236 0.0.0.3 area 0
+network 10.10.0.248 0.0.0.3 area 0
+----------------------------
+Configurar router id (dentro de la configuracion de ospf)
+----------------------------
+router-id 9.9.9.9
+----------------------------
+Configurar funcionamiento ospf
+----------------------------
+int g0/0/0
+ip ospf priority 255 (para elegir la mayor prioridad, no se por que esa interfaz)
+ip route 0.0.0.0 0.0.0.0 s0/1/1 (por si nos ponen una ruta por defecto a una ips, que salga por una interfaz)
+router ospf 10
+default-information originate (para pasar las rutas creadas estaticas por defecto al resto de la red ospf, en concreto la anterior, dentro de la configuracion de ospf)
+int s0/1/0
+ip ospf hello-interval 20
+ip ospf dead-interval 80 (para cambiar tiempos de mensajes en una interfaz)
+router ospf 10
+auto-cost reference-bandwidth 10000 (para poner los costes por defecto)
+int s0/1/1
+ip ospf cost 50 (para especificar el coste)
+router ospf 10
+passive-interface s0/1/1 (hacer una interfaz pasiva)
+----------------------------
+Configurar NAT
+++++++++++++++++++++++++++++
+----------------------------
+NAT ESTATICA:
+----------------------------
+ip nat inside source static 192.168.11.100 192.0.2.115  (primera ip entrada, segunda salida)
+int s0/1/1
+ip nat outside 
+int g0/0/0
+ip nat inside  (en la interfaz de entrada se pone inside y en la de salida outside)
+----------------------------
+PAT DINAMICA:
+----------------------------
+access-list 1 permit 192.168.0.0 0.0.255.255  (la access list para permitir el trafico que puede usar la pat)
+ip nat pool POOL-1 192.0.2.116 192.0.2.118 netmask 255.255.255.248  (pool de direcciones permitidas)
+ip nat inside source list 1 pool POOL-1 overload (overload se usa para que varias ip de entrada usen la misma ip de salida)
+int s0/1/1
+ip nat outside 
+int g0/0/0
+ip nat inside  (en la interfaz de entrada se pone inside y en la de salida outside, puede haber mas de una de entrada y salida)
+
+Se podria pedir (que no haya pool y que solo salga por una interfaz)
+ip nat inside source list 2 interface s0/1/1 overload
+----------------------------
+Configurar ACL
+++++++++++++++++++++++++++++ (depende de lo que te pidan, lo tienes que poner en el router que mas convenga)
+----------------------------
+ip access-list standard VTY-BLOCK
+permit 192.168.0.0 0.0.255.255
+deny any
+exit
+line vty 0 4
+access-class VTY-BLOCK in
+----------------------------
+----------------------------
+access-list 10 deny 192.168.11.0 0.0.0.255
+access-list 10 permit any
+int g0/0/1
+ip access-group 10 in
+----------------------------
+----------------------------
+access-list 101 deny tcp any host 192.168.33.14 eq www
+access-list 101 permit ip any any 
+int g0/0/0
+ip access-group 101 in
+----------------------------
+si no tienen nombre se usa access-list, si tiene nombre ip access-list
+standard se usa solo para redes o host concretos
+extended se usa para cosas más concretas, http -> eq www
+en las interfaces se pone in o out para aplicar los acl dependiendo de si se procesan o no
+----------------------------
+DISPOSITIVOS DE DIRECCION DE RED
+++++++++++++++++++++++++++++
+----------------------------
+NTP:
+----------------------------
+ntp server 192.168.33.14 (PARA CONECTAR UN CLIENTE A UN SERVIDOR)
+----------------------------
+HACER UN GUARDADO: (si guardamos la imagen ios en un servidor sería)
+----------------------------
+show flash (buscamos la de mayor tamaño y guardamos el nombre)
+copy flash tftp (ponemos ip del server, y el nombre del archivo, tarda bastante en copiarlo)
+----------------------------
