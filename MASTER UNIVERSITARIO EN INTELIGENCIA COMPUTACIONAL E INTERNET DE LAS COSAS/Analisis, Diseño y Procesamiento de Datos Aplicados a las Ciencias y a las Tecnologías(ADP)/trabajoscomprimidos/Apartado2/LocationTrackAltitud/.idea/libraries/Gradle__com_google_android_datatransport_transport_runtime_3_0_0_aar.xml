@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.datatransport:transport-runtime:3.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d0bab2bd7977cd16f3459b8dff717e5a/transformed/transport-runtime-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a9a709909d04a1d0f92b37499fc6efdb/transformed/transport-runtime-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ea9611c19d90844cdd574dc9817b9f84/transformed/transport-runtime-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c77b939c6cd2e85f1c6c29e3181e0922/transformed/transport-runtime-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9db8a64a2424320f58e58a166cb11fd9/transformed/transport-runtime-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/64e40cf8d67758f4991581e7d4e964f5/transformed/transport-runtime-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a44dd7392c5540ee3d0d619035010fba/transformed/transport-runtime-3.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a44dd7392c5540ee3d0d619035010fba/transformed/transport-runtime-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a44dd7392c5540ee3d0d619035010fba/transformed/transport-runtime-3.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.0.0/7f506fe3498cda976d1b350c218464a0f1974982/transport-runtime-3.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-crashlytics-ktx:18.2.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c4e88a9ff69e1ae627152d046ffed136/transformed/firebase-crashlytics-ktx-18.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/18ea3bac127bd5f3b8b196d323b1784a/transformed/firebase-crashlytics-ktx-18.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b8e7d278751916ad04f78099e84dcf3/transformed/firebase-crashlytics-ktx-18.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6122d542411f0516695c5a25aa863f4d/transformed/firebase-crashlytics-ktx-18.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/56f833cc1e06eff6364d50815cb07f83/transformed/firebase-crashlytics-ktx-18.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d270ba1eb8e24716e0b76c728f2c6bab/transformed/firebase-crashlytics-ktx-18.2.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f573e4aab73c1aa383824a90eb3ed425/transformed/firebase-crashlytics-ktx-18.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f573e4aab73c1aa383824a90eb3ed425/transformed/firebase-crashlytics-ktx-18.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f573e4aab73c1aa383824a90eb3ed425/transformed/firebase-crashlytics-ktx-18.2.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-crashlytics-ktx/18.2.1/fc3b69e747c541be04e0281fbe8f4307001f992c/firebase-crashlytics-ktx-18.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-crashlytics-ktx/18.2.1/5e3493bd5da8f8c384ed0cb9a026571587269162/firebase-crashlytics-ktx-18.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

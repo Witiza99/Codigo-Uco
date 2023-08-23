@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.datatransport:transport-api:3.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3bf41b55119f36ba4eecbde1bbcc4e66/transformed/transport-api-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cf68edd3253c2b7ca7ac0d586401128e/transformed/transport-api-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4bd075d7fc2093325c2783f598167f22/transformed/transport-api-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/65701532291346851e083b81d9962318/transformed/transport-api-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0ea3bb7db536ced652866ff3e354885b/transformed/transport-api-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bcb39416b16a859956994d151e9f2389/transformed/transport-api-3.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/be028e70a8b777b3a92ed09463f58a34/transformed/transport-api-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/be028e70a8b777b3a92ed09463f58a34/transformed/transport-api-3.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/be028e70a8b777b3a92ed09463f58a34/transformed/transport-api-3.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-api/3.0.0/7f506fe3498cda976d1b350c218464a0f1974982/transport-api-3.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
