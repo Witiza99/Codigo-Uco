@@ -1,0 +1,161 @@
+<!--2,8,9,13-->
+<!Doctype html>
+<html>
+
+	<head>
+	<title>Busqueda</title>
+	<meta charset="UTF-8">
+	<metaname="nombre" content="Página de Nuevo Proyecto">
+	<metaname="palabras_clave" content="HTML,CSS,XML,JavaScript">
+	<link href="css/estilos_Antonio.css" rel="stylesheet" type="text/css"/>
+	<link href="css/estilos_HF.css" rel="stylesheet" type="text/css"/>
+	<script src="js/funciones.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+
+		<!-- ******************* Inicio Cabecera ********************************   -->
+	<header id="cabecera">
+		<div class="cab-izq">
+			<figure id="logo">
+				<img src="img/open_graph_logo.png"/>
+			</figure>
+		</div>
+		<div class="cab-cent">
+			<section id="seleccion_idioma">
+				<select>
+					<option label="ES">ES</option>
+					<option label="EN">EN</option>
+				</select>
+			</section>
+		</div>
+		<!-- ************************************************************** -->
+		<!-- Se controla la muestra del boton con javascript, dependiendo de la pagina que
+			necesite mostrar alguna informacion para el usuario -->
+		<div class="cab-der">
+			<section>
+				<a href="#" id="acceso">Mi cuenta / Registrarse</a>
+			</section>
+		</div>
+		<!-- ********************* FIN DE COMENTARIO ********************** -->
+		<!-- ************************************************************** -->
+	</header>
+	<!-- ******************* Fin Cabecera ********************************   -->		
+
+			<div id="cuerpo_busqueda">
+
+			<div class="bus_izquierda">
+				<form role="search" name="form_busq">
+				 	<div class="buscador">
+				  		<input type="search" id="miBusqueda" name="q" placeholder="Buscar proyecto..." aria-label="Buscar en el contenido del sitio" size="12" required minlength="3" maxlength="21" >
+				  		<button>Buscar</button>
+				  		<span class="validity"></span>
+				 	</div>
+				</form>
+				<script>
+					functionvalidar(form_busq){
+						busqueda = document.getElementById('q');
+						fallo = validarBusqueda(busqueda);
+						if(fallo=="") return true;
+						else{
+							alert(fallo); 
+							return false;
+						} 
+					}
+				</script>
+				<form method="post" >
+					<div class="buscador_checkbox">
+				  		<p>
+				   		 	<input type="checkbox" name="autor" value="si"> Autor<br>
+				   	 		<input type="checkbox" name="propietario" value="si"> Propietario<br>
+				   			<input type="checkbox" name="miembros" value="si"> Miembros<br>
+				   			<input type="checkbox" name="materia" value="si"> Materia<br>
+				   			<input type="checkbox" name="universidad" value="si"> Universidad<br>
+				   			<input type="checkbox" name="empresa" value="si"> Empresa<br>
+				 			<input type="submit" value="Realizar Busqueda"></p>
+					</div>
+				</form>
+			</div>
+			<div class="bus_derecha">
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<img src="img/logo.png" alt="Imagen del proyecto:"/>
+					</div>
+					<div class="bus_titulo_proyecto">
+					<h4>T&iacutetulo del proyecto</h4>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<img src="img/logo.png" alt="Imagen del proyecto:"/>
+					</div>
+					<div class="bus_titulo_proyecto">
+					<h4>T&iacutetulo del proyecto</h4>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>	
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<img src="img/logo.png" alt="Imagen del proyecto:"/>
+					</div>
+					<div class="bus_titulo_proyecto">
+					<h4>T&iacutetulo del proyecto</h4>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>	
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<img src="img/logo.png" alt="Imagen del proyecto:"/>
+					</div>
+					<div class="bus_titulo_proyecto">
+					<h4>T&iacutetulo del proyecto</h4>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<img src="img/logo.png" alt="Imagen del proyecto:"/>
+					</div>
+					<div class="bus_titulo_proyecto">
+					<h4>T&iacutetulo del proyecto</h4>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<img src="img/logo.png" alt="Imagen del proyecto:"/>
+					</div>
+					<div class="bus_titulo_proyecto">
+					<h4>T&iacutetulo del proyecto</h4>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>					
+			</div>
+		</div>
+
+			<!-- ******************* Inicio Footer ********************************   -->
+			<footer id="footer">			
+				<div class="boton_footer esp"><a href="faq.html">FAQ</a></div>
+				<div class="boton_footer"><a href="faq.html">Contacta con nosotros</a></div>
+				<div class="boton_footer"><a href="faq.html">¿Quienes somos?</a></div>
+			</footer>
+			<!-- ******************* Fin Footer ********************************   -->
+	
+		
+
+	</body>
+
+</html>

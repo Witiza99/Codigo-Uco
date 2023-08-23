@@ -1,0 +1,8 @@
+Si se usa un sistema Linux con PHP y Firefox instalado solo se deberá ejecutar en una terminal el script start.sh.
+Si no se deberá iniciar un servidor PHP en la carpeta PaginaProyectoSIF y en un puerto cualquiera (comando linux: php -S localhost:PUERTO),
+tras hacer esto se abrirá el servidor en un navegador cualquiera con la dirección 'localhost:PUERTOELEGIDO'.
+Si nos encontramos en la red de la UCO podremos usar el usuario y contraseña 'allfood' si no habrá que cambiar el archivo index1.php por el index1-NoUCO.PHP
+debido a que la base de datos se encuentra en la red de la Universidad de Córdoba.
+Los usuarios y contraseñas de las aplicaciones web vienen especificadas en sus páginas.
+Para acceder a la página web de la solicitud habría que introducir de usuario:aioinf492 y de contraseña:mX8Q03m4 y una vez dentro el login sería
+usuario: allfood y contraseña: Allfood99 para usuario normal, para usuario administrador de la página, usuario: yzTTTS48 y contraseña: d0cbcca168.

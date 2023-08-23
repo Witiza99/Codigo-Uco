@@ -1,0 +1,52 @@
+Hacer los dos pasos anteriores en uno:
+`git commit -am "Mensaje"`
+
+Historial de commits:
+`git log`
+
+
+### **Comandos básicos II**
+
+Ayuda del listado anterior:
+`git help log`
+
+Listar los 5 commits más recientes:
+`git log -n 5`
+
+Listar los commits desde una fecha:
+`git log --author="Antonio"`
+
+Ver cambios en el directorio:
+`git status`
+
+
+### **Comandos básicos III**
+
+Ver diferencia entre ficheros en el directorio y el repositorio git:
+`git diff`
+
+Ver diferencia entre ficheros en el *staging* y el repositorio:
+`git diff --staged`
+
+Eliminar archivos:
+~~~
+git rm archivo
+git commit -m "Mensaje"
+~~~
+
+Mover o renmbrar archivos:
+~~~
+git mv antiguo nuevo
+git commit -m "Mensaje"
+~~~
+
+
+### **Comandos básicos IV**
+
+Deshacer cambios con git:
+`git checkout --nombre-fichero`
+
+Retirar archivos del *staging*:
+`git reset HEAD nombre_fichero`
+
+Complementar último commit:

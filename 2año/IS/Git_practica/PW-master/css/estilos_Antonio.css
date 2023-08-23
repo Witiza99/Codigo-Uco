@@ -1,0 +1,385 @@
+body{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+}
+
+#cuerpo{
+    background-color: white;
+    padding-bottom: 1000px;
+}
+#cuerpo_detalle_proyecto{
+    background-color: white;
+    padding-bottom: 750px;
+}
+
+#cuerpo_busqueda{
+    background-color: white;
+    padding-bottom: 750px;
+}
+
+/**********************************************************************************************************/
+/*********************************** CONTENIDO-Nuevo_Proyecto *********************************************/
+
+/*parte de la izquierda de la página*/
+#formulario_nuevo_proyecto{
+    width: 56%;
+    height:auto;
+    margin-left: 2%;
+    float: left;
+}
+
+#formulario_nuevo_proyecto .parrafos{
+    width: 100%;
+}
+
+.estiloarea{
+    width: 97%;
+    height: 100px;
+    border: 2px solid #990000;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    padding: 1% 1%;
+}
+
+.lineas{
+    margin-top: 2%;
+    margin-bottom: 6%; 
+}
+
+.lineas input{
+     width: 97%;
+}
+
+
+#Titulo{
+    margin-top: 4%;
+}
+
+.lineas select{
+    width: 100%;
+    height: 100%;
+    padding: 1% 1%;
+}
+
+
+.lineas_img label{
+    background-color: #7F9CCB;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-size: 0.8rem;
+    height: auto;
+}
+
+.lineas_img label:hover{
+  background-color: #2D5BA3;
+  color: white;
+}
+
+.button{
+    margin-top: 6%;
+}
+
+.button input{
+    background-color: #7F9CCB;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    float:left;
+    text-align: center;
+    margin-right: 3%;
+    color: black;
+}
+
+.button input:hover{
+    background-color: #2D5BA3;
+    color: white;
+}
+
+
+/*parte de la derecha de la página*/
+#mostrar_imagenes_derecha{
+    width: 42%;
+    height:1000px;
+    float: right;
+}
+
+#mostrar_imagenes_derecha .img_der_sup{
+    width: 90%;
+    float: center;
+    margin-top: 20%;
+    margin-bottom: 40%;
+}
+
+#mostrar_imagenes_derecha .img_der_inf{
+    width: 90%;
+    float: center;
+    margin-top: 20%;
+    margin-bottom: 40%;
+}
+
+.img_der_sup{
+    display: inline-block;
+    text-align: center;
+}
+
+.img_der_inf{
+    display: inline-block;
+    text-align: center;
+}
+
+.img_der_sup img{
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.img_der_inf img{
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+.img_der_sup p{
+    line-height: 32px;
+    padding-left: 10px;
+}
+.img_der_inf p{
+    line-height: 32px;
+    padding-left: 10px;
+}
+/*----------------*/
+
+/**********************************************************************************************************/
+/*********************************** CONTENIDO-Detalle_Proyecto *********************************************/
+
+.det_izquierda{
+    width: 60%;
+    height:45em;
+    float: left;
+}
+
+.det_derecha{
+    width: 40%;
+    height:45em;
+    float: right;
+}
+
+.titulo_proyecto{
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.img_proyecto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.img_proyecto img{
+    border: 1px solid black;
+    width: 450px;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.descripcion_proyecto{
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: block;
+    height: 20em;
+    justify-content: center;
+    margin: 15px;
+}
+
+.botones_detalle{
+    padding: 7px 15px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    
+}
+
+.botones_detalle button{
+    background-color: #7F9CCB;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    float:left;
+    text-align: center;
+    margin-right: 3%;
+    color: black;
+}
+
+.botones_detalle button:hover{
+    background-color: #2D5BA3;
+    color: white;
+}
+
+.botones_detalle button a{
+    text-decoration: none;
+    color: black;
+}
+
+.botones_detalle button a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.descripcion_proyecto_corta{
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: block;
+    height: 20em;
+    justify-content: center;
+    margin: 15px;
+}
+.encapsula{
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    height: 15em;
+    margin: 15px;
+}
+
+.encapsula li{
+    margin: 5px;
+}
+
+/**********************************************************************************************************/
+/********************************************** Busqueda ****************************************************/
+
+.bus_izquierda{
+    width: 31%;
+    height:45em;
+    float: left;
+    margin-left: 1%;
+}
+
+.bus_derecha{
+    width: 68%;
+    height:45em;
+    float: right;
+    overflow-y:scroll;
+}
+
+.buscador input:invalid ~ span:after {
+    content: '✖';
+    padding-left: 5px;
+    position: absolute:
+}
+
+.buscador input:valid ~ span:after {
+    content: '✓';
+    padding-left: 5px;
+    position: absolute:
+}
+
+.buscador{
+    display: block;
+    width: 100%;
+    height:30px;
+    padding: 2px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.buscador button{
+    display: inline-block;
+    background-color: #7F9CCB;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.buscador button:hover{
+    background-color: #2D5BA3;
+    color: white;
+}
+
+.buscador_checkbox{
+    display: block;
+    width: 170px;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.buscador_checkbox input{
+    background-color: #7F9CCB;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.buscador_checkbox input:hover{
+    background-color: #2D5BA3;
+    color: white;
+}
+
+.bloques{
+    display: block;
+    float: left;
+    width: 43%;
+    height:43%;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    padding: auto;
+}
+
+.bus_img_proyecto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bus_img_proyecto{
+    width: 100%;
+    height: 45%;
+}
+
+.bus_titulo_proyecto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bus_descripcion_proyecto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,612 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-oct-2019, 23:08:02
+    Author     : Oscar
+*/
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    font-size: 0.9em;
+    background-color: #e9efee;
+}
+
+#cuerpo{
+    width: 70%;
+    margin: 0 auto;
+    /*height: 800px;*/
+}
+
+/**********************************************************************************************************/
+/******************************************* CABECERA *****************************************************/
+
+#logo img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: auto;
+}
+
+#cabecera{
+    width: 100%;
+    height: 150px;
+    /*background-color: red;*/
+    /*border: 1px solid black;*/
+    
+    background: rgba(36,255,127,1);
+    background: -moz-linear-gradient(left, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(14%, rgba(36,255,127,1)), color-stop(25%, rgba(36,255,127,1)), color-stop(84%, rgba(30,233,154,1)), color-stop(100%, rgba(28,227,161,1)));
+    background: -webkit-linear-gradient(left, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    background: -o-linear-gradient(left, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    background: -ms-linear-gradient(left, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    background: linear-gradient(to right, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24ff7f', endColorstr='#1ce3a1', GradientType=1 );
+    
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+#cabecera .cab-izq{
+    float:left;
+    width: 18%;
+    height: 100%;
+    /*background-color: green;*/
+
+}
+
+#cabecera .cab-izq img{
+    float:left;
+    padding: 0 auto;
+    /*border: 1px solid black;*/
+}
+
+#cabecera .cab-izq img:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#cabecera .cab-cent{
+    float:left;
+    width: 10%;
+    height: 100%;
+}
+
+.cab-cent select{
+    padding: 5px 20px;
+}
+
+#cabecera .cab-der{
+    float:right;
+    width: 25%;
+    /*padding-top: 50px;*/
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+#seleccion_idioma{
+    padding: 50px 0px;
+}
+
+.cab-der a{
+   /* margin: 50px;*/
+    padding: 10px 20px;
+    background-color: #0066ff;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.cab-der a:hover{
+    background-color:#66ff66;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+}
+/**********************************************************************************************************/
+/*********************************** CONTENIDO-CATEGORIA **************************************************/
+#contenido{
+    width: 100%;
+    /*height:500px;*/
+    float: left;
+    background-color: white;
+}
+
+#contenido .izquierda{
+    width: 29.5%;
+    height: 100%;
+    float:left;
+    /*background-color: #00ffff;*/
+    /*border: 1px solid black;*/
+}
+
+#contenido .izquierda h5{
+    margin-bottom:8px;
+    margin-left: 15px;
+}
+
+.izquierda select{
+    /**
+    padding: 5px;
+    margin: 50px 100px;
+    **/
+    /*background: white;*/
+    /**
+    display: flex;
+    justify-content: center;
+    **/
+    /*width: 100%;*/
+   /* padding: 16px 20px;*/
+    /*border: none;*/
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    display: block;
+    margin: 0 auto;
+}
+
+.option_gray{
+    /*background-color: #cccccc;*/
+}
+
+#contenido .derecha{
+    width: 70%;
+    float:right;
+    /*background-color: brown;*/
+    height: 100%;
+    border: 1px solid black;
+    padding-bottom: 100px;
+}
+
+.content-div-block{
+    width: 95%;
+    float: left;
+    margin: 10px 20px;
+    margin-top: 0;
+}
+
+.imagen_detalle_proyecto{
+    float: left;
+    /*width: 25%;*/
+    /*height: 100%;*/
+}
+
+.imagen_detalle_proyecto img{
+    width: 100px;
+    height: 100px;   
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.descripcion_detalle_proyecto{
+    width: 70%;/*60*/
+    float:left;
+    font-size: 0.9em;
+    /*background-color: red;*/
+    height: 100%;
+    padding-left: 30px;
+}
+
+.encapsula{
+    width: 100%;
+    /*height: 170px;*/
+    /*background-color: blue;*/
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 4px;
+    float:left;
+}
+
+/**/
+ /* Pagination links */
+ .pagination1{
+     margin-top: 20px;
+     float: left;
+     width:100%;
+ }
+ .pagination{
+    margin: 0 auto;
+ }
+ 
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;} 
+/**/
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+
+
+/**********************************************************************************************************/
+/********************************************** REGISTRO **************************************************/
+#contenido-reg{
+    width: 100%;
+    /*height: 750px;*/
+    float: left;
+    background-color: white;
+}
+.izq-registro{
+    width: 45%;
+    /*border: 1px solid black;*/
+    float: left;
+    height:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-registro{
+    border: 1px solid #cccccc;
+    width: 80%;
+    border-radius: 5px;
+    margin: 30px auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#form-registro input[type=text],input[type=password],input[type=email],select,textarea{
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    padding: 7px;
+}
+
+.form_camp_oblig{
+    display:block;
+    float:left;
+    width: 100%;
+    font-size: 0.8em;
+    color: #ff3333;
+    margin: 10px 0 10px 15px;
+    text-align: left;
+}
+
+#form-registro textarea{
+    color: #ccc;
+}
+
+.form-button{
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color:#6699ff;
+    color: white;
+    font-weight: bold;
+    float:right;
+    margin: 10px 20px 0 0;
+    border: 1px solid #6699ff;
+}
+
+.form-button:hover{
+    background-color:#cccccc;
+    color: #6699ff;
+    border: 1px solid #cccccc;
+}
+
+.ast-form{
+    color: #ff6666;
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+.ast-form-white{
+    color: white;
+}
+
+.der-registro{
+    width: 54.5%;
+    border: 1px solid black;
+    float: left;
+    height:100%;
+}
+
+#carrusel-registro{
+    border: 1px solid black;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#carrusel-registro figure img{
+    width: 100%;
+    height: 300px;
+}
+
+/*Inicio carrusel */
+/******************/
+
+#carrusel-reg{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    transition-delay: 1s;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  /*top: 50%;*/
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.desc-proy-reg{
+    background-color: red;
+}
+/*finde carrusel*/
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+
+/**********************************************************************************************************/
+/************************************************* CURRICULUM *********************************************/
+#contenido-curr{
+    width: 100%;
+    float: left;
+    padding-bottom: 50px;
+    font-size: 0.9em;
+    background-color: white;
+}
+
+#form-curriculum{
+    margin: 20px 0 20px 0;
+}
+#crear-curriculum{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    color: #999999;
+}
+
+.camp-cur{
+    width: 100%;
+    margin: 15px auto;
+}
+
+.camp-cur input[type=text]{
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #999999;
+}
+
+.sec-row-cur,.thi-row-cur{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.col-izq-cur,.col-der-cur{
+    width: 50%;
+    float:left;
+}
+
+.col-izq-cur > p,.col-der-cur p{
+    /*display: inline;*/
+    margin: 0;
+}
+
+.col-der-cur input[type=text],.col-der-cur input[type=email]{
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 4px;
+    padding: 5px 15px;
+    border: 1px solid #999;
+}
+
+.div-cur{
+    width:100%;
+    height: 5px;
+    background-color: #999;
+    margin: 35px 0;
+    float: left;
+}
+
+.exp-laboral{
+    width: 100%;
+}
+
+.exp-laboral textarea{
+    width: 100%;
+    padding: 0;
+}
+
+.thi-row-cur,.four-row-cur{
+    float:left;
+    width: 100%;
+    margin-top: 30px;
+}
+.thi-row-cur .col-izq-cur,.four-row-cur .col-izq-cur{
+    width: 30%;
+}
+
+.thi-row-cur .col-der-cur,.four-row-cur .col-der-cur{
+    width: 70%;
+}
+
+.thi-row-cur .col-izq-cur > p,.four-row-cur .col-izq-cur > p{
+    margin-bottom: 10px;
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+
+/**********************************************************************************************************/
+/********************************************** FOOTER ****************************************************/
+footer{
+    float: left;
+    width: 100%;
+    
+    background: rgba(36,255,127,1);
+    background: -moz-linear-gradient(left, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(14%, rgba(36,255,127,1)), color-stop(25%, rgba(36,255,127,1)), color-stop(84%, rgba(30,233,154,1)), color-stop(100%, rgba(28,227,161,1)));
+    background: -webkit-linear-gradient(left, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    background: -o-linear-gradient(left, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    background: -ms-linear-gradient(left, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    background: linear-gradient(to right, rgba(36,255,127,1) 14%, rgba(36,255,127,1) 25%, rgba(30,233,154,1) 84%, rgba(28,227,161,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24ff7f', endColorstr='#1ce3a1', GradientType=1 );
+}
+
+.boton_footer{
+    /*background-color: red;*/
+    /*padding: 5px 10px;*/
+    padding: 25px 0;
+    width: 33.33%;
+    float:left;
+    padding: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/*
+#footer{
+    float:left;
+}*/
+
+.boton_footer button{
+    padding: 7px 15px;
+}
+
+.boton_footer a{
+    display: block;
+    padding: 10px 15px;
+    /*background-color:#717171;*/
+    background-color:#e9efee;
+    text-decoration: none;
+    color: #6699ff;
+    font-size: 0.9em;
+}
+.esp > a{
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.boton_footer a:hover{
+    background-color:#6699ff;
+    text-decoration: none;
+    color:   #717171;
+}
+
+.boton_footer a:active{
+    color:#717171;
+}
+
+.boton_footer button{
+    float:left;
+    text-align: center;
+}
+
+/*******/
+#sp_mo,.sp_mo{
+    color:red;
+    font-size: 0.7em;
+    float: left;
+}
+
+textarea{
+    resize: none;
+}

@@ -1,0 +1,210 @@
+Código realizado por Antonio Gómez Giménez
+
+
+Programación de shell scripts
+
+Ejercicio 1:
+En el ejercicio uno es necesario usar find para para encontrar los .h y .c aparte se usa el sort para ordenar la salida del for, con -k 8 se ordena por esa columna
+Para ejecutar el programa aparte de darle permisos con chmod u+x practica1.sh se debería poner ./ejercicio1.sh ejemploCarpeta/
+
+Un ejemplo de ejecución sería:
+~/Practica$ ./ejercicio1.sh ejemploCarpeta/                           
+Tenemos 4 Ficheros con extension.c y 5 ficheros con extension.h
+El fichero ejemploCarpeta/d1/audit.h tiene 463 lineas y 18221 caracteres
+El fichero ejemploCarpeta/d1/auditBackup.h tiene 463 lineas y 18221 caracteres
+El fichero ejemploCarpeta/d1/ecoc.h tiene 76 lineas y 2377 caracteres
+El fichero ejemploCarpeta/d1/auto_fs.h tiene 72 lineas y 2288 caracteres
+El fichero ejemploCarpeta/d1/compat.h tiene 17 lineas y 370 caracteres
+
+
+Ejercicio 2:
+En este ejercicio cabe destacar el uso de stat -size con + o - n permitiendo averiguar el tamaño de los archivos
+Para ejecutar el programa aparte de darle permisos con chmod u+x practica2.sh se debería poner ./ejercicio2.sh con un argumento siendo este el directorio o dos argumentos siendo el segundo la cantidad mínima de bytes que los archivos pueden tener (este argumento es opcional sino se pone automáticamente es 0)
+
+Un ejemplo de ejecución sería:
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ./ejercicio2.sh ejemploCarpeta/   
+Nombre, LongitudUsuario, FechaModificación, FechaAcceso, Tamaño, Bloques, Permisos, Ejecutable
+act_func.c; 9; 2016-02-28 18:09:30.000000000 +0100; 2019-04-19 13:02:22.173804000 +0200; 92; 16; -rw-------; 0
+act_func.c; 9; 2019-04-16 11:18:47.751991000 +0200; 2019-04-20 02:38:01.877544000 +0200; 92; 16; -rw-------; 0
+act_func.c; 9; 2019-04-16 11:18:48.008375000 +0200; 2019-04-20 02:38:01.993192000 +0200; 92; 16; -rw-------; 0
+svm_model_matlab.c; 9; 2016-02-28 18:09:24.000000000 +0100; 2019-04-19 13:02:22.162144000 +0200; 99; 16; -rw-------; 0
+svm_model_matlab.c; 9; 2019-04-16 11:18:47.724833000 +0200; 2019-04-20 02:38:01.873632000 +0200; 99; 16; -rw-------; 0
+svm_model_matlab.c; 9; 2019-04-16 11:18:47.981771000 +0200; 2019-04-20 02:38:01.986625000 +0200; 99; 16; -rw-------; 0
+smo_routine.c; 9; 2016-02-28 18:09:21.000000000 +0100; 2019-04-19 13:02:22.151253000 +0200; 104; 16; -rw-------; 0
+smo_routine.c; 9; 2019-04-16 11:18:47.697745000 +0200; 2019-04-20 02:38:01.858814000 +0200; 104; 16; -rw-------; 0
+...........
+~/Practica$ ./ejercicio2.sh ejemploCarpeta/ 5000            
+Nombre, LongitudUsuario, FechaModificación, FechaAcceso, Tamaño, Bloques, Permisos, Ejecutable
+a2.out; 9; 2016-02-28 18:09:13.000000000 +0100; 2019-04-19 13:02:22.034761000 +0200; 7275; 16; -rwx------; 1
+a.out; 9; 2016-02-28 18:08:55.000000000 +0100; 2019-04-19 13:02:22.133318000 +0200; 7275; 16; -rwx------; 1
+eje2; 9; 2016-02-28 18:09:34.000000000 +0100; 2019-04-19 13:02:22.140394000 +0200; 7275; 16; -rwx------; 1
+...........
+
+
+Ejercicio 3:
+En este ejercicio aparte de find -size nombradas anteriormente se usa mkdir para crear directorios y rm para borrarlos
+Para ejecutar el programa aparte de darle permisos con chmod u+x practica3.sh se debería poner ./ejercicio3.sh con un argumento siendo este directorio o con dos argumentos extra aparte del anterior, siendo los límites de bytes que puede tener el archivo, si no se ponen el programa los pone por defecto.
+
+c
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ./ejercicio3.sh ejemploCarpeta/     
+Creando las carpetas pequenos, medianos y grandes...
+Copiando los archivos...
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ls pequenos/ medianos/ grandes/
+grandes/:
+elinfiernoexiste.jpg  libglib-2.0.so.0
+
+medianos/:
+a2.out         bcache.cpp     d3.html                                 ejemploSuid.sh      Linus_torvalds.jpg   raid0.png
+act_func.c     Carpeta1.html  d4.html                                 fedora.png          logo_eps_grande.jpg  richard-stallman.jpg
+a.out          centos.png     debian.png                              HD.png              logos.html           smo_routine.c
+auditBackup.h  compat.h       devocion-administrador-de-sistemas.png  images.html         Logo_uco.gif         svm_model_matlab.c
+audit.h        d1.html        ecoc.h                                  libhandle.so.1.0.3  pirates.jpg          Teoria.html
+auto_fs.h      d2.html        eje2                                    libsysfs.so.2       prueba.c
+
+pequenos/:
+a2.out      auto_fs.h      centos.png  d2.html  debian.png  ejemploSuid.sh  logos.html   smo_routine.c
+act_func.c  bcache.cpp     compat.h    d3.html  ecoc.h      fedora.png      pirates.jpg  svm_model_matlab.c
+a.out       Carpeta1.html  d1.html     d4.html  eje2        images.html     prueba.c     Teoria.html
+
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ./ejercicio3.sh ejemploCarpeta/ 10761 100000
+Creando las carpetas pequenos, medianos y grandes...
+Copiando los archivos...
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ls pequenos/ medianos/ grandes/             
+grandes/:
+elinfiernoexiste.jpg  libglib-2.0.so.0
+
+medianos/:
+a2.out         bcache.cpp     d3.html                                 ejemploSuid.sh      Linus_torvalds.jpg   raid0.png
+act_func.c     Carpeta1.html  d4.html                                 fedora.png          logo_eps_grande.jpg  richard-stallman.jpg
+a.out          centos.png     debian.png                              HD.png              logos.html           smo_routine.c
+auditBackup.h  compat.h       devocion-administrador-de-sistemas.png  images.html         Logo_uco.gif         svm_model_matlab.c
+audit.h        d1.html        ecoc.h                                  libhandle.so.1.0.3  pirates.jpg          Teoria.html
+auto_fs.h      d2.html        eje2                                    libsysfs.so.2       prueba.c
+
+pequenos/:
+a2.out      auto_fs.h      centos.png  d2.html  debian.png  ejemploSuid.sh  libhandle.so.1.0.3  prueba.c            Teoria.html
+act_func.c  bcache.cpp     compat.h    d3.html  ecoc.h      fedora.png      logos.html          smo_routine.c
+a.out       Carpeta1.html  d1.html     d4.html  eje2        images.html     pirates.jpg         svm_model_matlab.c
+
+
+Ejercicio 4:
+En este ejercicio se usa who para ver las personas conectadas y se usa awk para quedarnos con lo que nos interesa por último se usa uniq para evitar duplicaciones. Cabe destacar el uso de read para leer el carácter y como se usa grep y un fichero temporal para ver los cuantas veces se repite el carácter. Si no se especifica carácter tras 5 segundos se pone automáticamente la a.
+Para ejecutar el programa aparte de darle permisos con chmod u+x practica4.sh se debería poner (estando dentro de la carpeta) ../ejercicio4.sh sin argumentos
+
+Un ejemplo de ejecución sería:
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ cd ejemploCarpeta/
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica/ejemploCarpeta$ ../ejercicio4.sh  
+El número actual de archivos en el fichero es 5
+cc0gobas
+fl2pesaa
+i42jialf
+i72cadem
+i72gogia
+p42giluj
+tonin
+¿Qué carácter quieres contar? 
+d
+El carácter d aparece 24 en nombres de ficheros o carpetas contenidos en la carpeta actual
+
+Ejercicio 5:
+En este ejercicio se destaca pwd para ver la ruta actuar, date para ver la fecha en segundos y stat visto anteriormente, también destacar tar -czf para crear archivos tar donde comprimiremos los archivos que se pasen por argumentos.
+Para ejecutar el programa aparte de darle permisos con chmod u+x practica5.sh se debería poner ./ejercicio5.sh con un argumento como mínimo.
+
+Un ejemplo de ejecución sería:
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ./ejercicio5.sh ejemploCarpeta/
+La copia de seguridad se ha creado correctamente.
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ls $(pwd)/copia/ -la           
+total 1448
+drwx------ 2 i72gogia upi0    152 abr 20 20:30 .
+drwx------ 7 i72gogia upi0   8192 abr 20 20:30 ..
+-rw------- 1 i72gogia upi0 725617 abr 20 20:28 copia-i72gogia-1555784882.tar.gz
+-rw------- 1 i72gogia upi0 725617 abr 20 20:30 copia-i72gogia-1555785016.tar.gz
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ./ejercicio5.sh ejemploCarpeta/
+Borrando /home/i72gogia/Desktop/Pas3/ejemplosClase/Practica/copia/copia-i72gogia-1555784882.tar.gz de 221 segundos...
+La copia de seguridad se ha creado correctamente.
+
+
+Ejercicio 6:
+En este ejercicio principalmente debes de saber algo de html para poder ir volcando de los echos a un fichero html, también es necesario hacer funciones y de hecho la que uso es recursiva permitiendo así controlar mejor el flujo del programa que con un for ya que con un for no podía hacerlo.
+El fichero resultante se puede ver por navegador al ser un html.
+Para ejecutar el programa aparte de darle permisos con chmod u+x practica6.sh se debería poner ./ejercicio6.sh con un argumento siendo este el directorio (no poner / al final del nombre o puede dar problemas).
+
+Un ejemplo de ejecución sería:
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ ./ejercicio6.sh ejemploCarpeta 
+Generando el listado de la carpeta /home/i72gogia/Desktop/Pas3/ejemplosClase/Practica/ejemploCarpeta sobre el fichero ejemploCarpeta.html...
+Terminado!      
+i72gogia@NEWTS:~/Desktop/Pas3/ejemplosClase/Practica$ cat ejemploCarpeta.html 
+<html>
+<head>
+<title>Listado del directorio ejemploCarpeta/</title>
+</head>
+<body>
+<style type=text/css>body { font-family: sans-serif;}</style>
+<h1>Listado del directorio ejemploCarpeta/</h1>
+<ul>
+<li>ejemploCarpeta/d2.html</li>
+<li><strong>ejemploCarpeta/images</strong></li>
+<ul>
+<li>ejemploCarpeta/images/Teoria.html</li>
+<li><strong>ejemploCarpeta/images/logos</strong></li>
+<ul>
+<li>ejemploCarpeta/images/logos/Logo_uco.gif</li>
+<li>ejemploCarpeta/images/logos/logo_eps_grande.jpg</li>
+</ul>
+<li><strong>ejemploCarpeta/images/Carpeta1</strong></li>
+<ul>
+<li>ejemploCarpeta/images/Carpeta1/richard-stallman.jpg</li>
+<li>ejemploCarpeta/images/Carpeta1/pirates.jpg</li>
+<li>ejemploCarpeta/images/Carpeta1/elinfiernoexiste.jpg</li>
+<li>ejemploCarpeta/images/Carpeta1/devocion-administrador-de-sistemas.png</li>
+<li>ejemploCarpeta/images/Carpeta1/Linus_torvalds.jpg</li>
+</ul>
+<li><strong>ejemploCarpeta/images/Teoria</strong></li>
+<ul>
+<li>ejemploCarpeta/images/Teoria/raid0.png</li>
+<li>ejemploCarpeta/images/Teoria/fedora.png</li>
+<li>ejemploCarpeta/images/Teoria/debian.png</li>
+<li>ejemploCarpeta/images/Teoria/a2.out</li>
+<li>ejemploCarpeta/images/Teoria/centos.png</li>
+<li>ejemploCarpeta/images/Teoria/HD.png</li>
+</ul>
+<li>ejemploCarpeta/images/Carpeta1.html</li>
+<li>ejemploCarpeta/images/logos.html</li>
+</ul>
+<li><strong>ejemploCarpeta/d2</strong></li>
+<ul>
+<li>ejemploCarpeta/d2/libglib-2.0.so.0</li>
+<li>ejemploCarpeta/d2/prueba.c</li>
+<li>ejemploCarpeta/d2/a.out</li>
+<li>ejemploCarpeta/d2/ejemploSuid.sh</li>
+</ul>
+<li>ejemploCarpeta/d3.html</li>
+<li><strong>ejemploCarpeta/d3</strong></li>
+<ul>
+<li>ejemploCarpeta/d3/disco2.png</li>
+<li>ejemploCarpeta/d3/eje2</li>
+</ul>
+<li>ejemploCarpeta/d1.html</li>
+<li>ejemploCarpeta/.html</li>
+<li><strong>ejemploCarpeta/d1</strong></li>
+<ul>
+<li>ejemploCarpeta/d1/audit.h</li>
+<li>ejemploCarpeta/d1/libhandle.so.1.0.3</li>
+<li>ejemploCarpeta/d1/smo_routine.c</li>
+<li>ejemploCarpeta/d1/auto_fs.h</li>
+<li>ejemploCarpeta/d1/auditBackup.h</li>
+<li>ejemploCarpeta/d1/ecoc.h</li>
+<li>ejemploCarpeta/d1/svm_model_matlab.c</li>
+<li>ejemploCarpeta/d1/compat.h</li>
+<li><strong>ejemploCarpeta/d1/d4</strong></li>
+<ul>
+<li>ejemploCarpeta/d1/d4/bcache.cpp</li>
+<li>ejemploCarpeta/d1/d4/act_func.c</li>
+<li>ejemploCarpeta/d1/d4/libsysfs.so.2</li>
+</ul>
+<li>ejemploCarpeta/d1/d4.html</li>
+</ul>
+<li>ejemploCarpeta/images.html</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body{
+	background: lightgray;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cuerpo{
+	background-color: white;
+	padding-bottom: 50%;
+}
+
+#cuerpo_acceder{
+	background-color: white;
+	padding-bottom: 25%;
+}
+
+#info{
+  margin-top:5%;
+	margin-left: 2%;
+  float: left;
+  width: 35%;
+  text-align: justify;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+#info_personal{
+  text-align: center;
+	margin: 5%;
+}
+
+#boton{
+	margin-left: 33.55%;
+}
+
+#boton a{
+	text-decoration: none;
+	color: black;
+}
+
+#curriculum{
+	margin-top: 5%;
+	margin-right: 2%;
+  float: right;
+  width: 50%;
+  text-align: justify;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+.parrafo{text-align: left;width: 90%;border: 1px;border-style: solid;border-color: black;border-radius: 5px;font-style: italic;font-family: fantasy;}
+
+#stock img{
+    width: 20%;
+    float: left;
+		margin: 5%;
+}
+
+#acceso2{
+  float: right;
+  width: 30%;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+	margin: 5%;
+}
+
+.registro{
+  padding: 2px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+}
+
+#correo{
+margin: 2%;
+margin-left: 7.5%;
+}
+
+#contrasena{
+margin: 2%;
+}
+
+#formulario label{
+	margin: 5%;
+}
+#Acceder{
+	margin-left: 5%;
+}
+
+#cuerpo_faq{
+	background-color: white;
+	padding-bottom: 70%;
+}
+
+.faq{
+	width: 100%;
+	height: 300px;
+	border: 1px solid black;
+	margin-top: 2px;
+}

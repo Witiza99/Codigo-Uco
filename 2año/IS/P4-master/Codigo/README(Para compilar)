@@ -1,0 +1,11 @@
+Para compilar usar
+
+g++ -Wall Main.cc BorrarAlumno.cc BuscarAlumno.cc  IntroducirAlumno.cc ModificarAlumno.cc ModificarLider.cc MostrarAlumno.cc OrdenarAlumnos.cc CargarInfoCs.cc CargarInformacion.cc GuardarInfoCs.cc GuardarInformacion.cc Identificación.cc ModificarContrasena.cc -o IS
+
+Para ejecutar
+
+./IS
+
+Los usuarios son CoordinadorN o AyudanteN
+Las contraseñas son PassCoorN o PassAyudN
+Con 'N' de 1 a 5.
