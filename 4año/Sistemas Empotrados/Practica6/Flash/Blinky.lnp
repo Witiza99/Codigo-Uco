@@ -1,0 +1,10 @@
+--cpu ARM7TDMI
+".\flash\lpc2300.o"
+".\flash\retarget.o"
+".\flash\serial.o"
+".\flash\hal.o"
+".\flash\practica6.o"
+--library_type=microlib --strict --scatter ".\Flash\Blinky.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Flash\Blinky.map" -o .\Flash\Blinky.axf

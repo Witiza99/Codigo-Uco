@@ -1,0 +1,10 @@
+EN div_frec NULL C:/i72gogia/Practica2/Div_frec.vhd sub00/vhpl00 1619009791
+AR reg_desp behavioral C:/i72gogia/Practica2/reg_desp.vhd sub00/vhpl05 1619009796
+EN cont_digito NULL C:/i72gogia/Practica2/cont_digito.vhd sub00/vhpl02 1619009793
+AR control_display behavioral C:/i72gogia/Practica2/control_display.vhd sub00/vhpl09 1619009800
+EN control_display NULL C:/i72gogia/Practica2/control_display.vhd sub00/vhpl08 1619009799
+AR cont_digito behavioral C:/i72gogia/Practica2/cont_digito.vhd sub00/vhpl03 1619009794
+AR div_frec behavioral C:/i72gogia/Practica2/Div_frec.vhd sub00/vhpl01 1619009792
+EN decodificador NULL C:/i72gogia/Practica2/decodificador.vhd sub00/vhpl06 1619009797
+AR decodificador behavioral C:/i72gogia/Practica2/decodificador.vhd sub00/vhpl07 1619009798
+EN reg_desp NULL C:/i72gogia/Practica2/reg_desp.vhd sub00/vhpl04 1619009795

@@ -1,0 +1,62 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/xinlinx/Practica4/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to E:/xinlinx/Practica4/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: prueba.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\xinlinx\Practica4\prueba.vhd" into library work
+Parsing entity <Principal>.
+Parsing architecture <Behavioral> of entity <principal>.
+ERROR:HDLCompiler:806 - "E:\xinlinx\Practica4\prueba.vhd" Line 63: Syntax error near "=".
+ERROR:HDLCompiler:806 - "E:\xinlinx\Practica4\prueba.vhd" Line 67: Syntax error near "=".
+ERROR:HDLCompiler:806 - "E:\xinlinx\Practica4\prueba.vhd" Line 70: Syntax error near "generate".
+ERROR:HDLCompiler:806 - "E:\xinlinx\Practica4\prueba.vhd" Line 76: Syntax error near "=".
+ERROR:HDLCompiler:806 - "E:\xinlinx\Practica4\prueba.vhd" Line 80: Syntax error near "=".
+ERROR:HDLCompiler:806 - "E:\xinlinx\Practica4\prueba.vhd" Line 81: Syntax error near "=".
+ERROR:HDLCompiler:841 - "E:\xinlinx\Practica4\prueba.vhd" Line 81: Expecting type  void for <acarreo>.
+ERROR:HDLCompiler:806 - "E:\xinlinx\Practica4\prueba.vhd" Line 82: Syntax error near "generate".
+ERROR:HDLCompiler:854 - "E:\xinlinx\Practica4\prueba.vhd" Line 38: Unit <behavioral> ignored due to previous errors.
+VHDL file E:\xinlinx\Practica4\prueba.vhd ignored due to errors
+--> 
+
+Total memory usage is 4495144 kilobytes
+
+Number of errors   :    9 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

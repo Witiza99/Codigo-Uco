@@ -1,0 +1,5 @@
+vhdl work "C:\i72gogia\Practica2\reg_desp.vhd"
+vhdl work "C:\i72gogia\Practica2\Div_frec.vhd"
+vhdl work "C:\i72gogia\Practica2\decodificador.vhd"
+vhdl work "C:\i72gogia\Practica2\cont_digito.vhd"
+vhdl work "C:\i72gogia\Practica2\control_display.vhd"

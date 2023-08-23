@@ -1,0 +1,5 @@
+vhdl work "reg_desp.vhd"
+vhdl work "Div_frec.vhd"
+vhdl work "decodificador.vhd"
+vhdl work "cont_digito.vhd"
+vhdl work "control_display.vhd"

@@ -1,0 +1,3 @@
+/home/rafa/Escritorio/GitHub/Redes-Neuronales-OPENMP/la2/build/CMakeFiles/rebuild_cache.dir
+/home/rafa/Escritorio/GitHub/Redes-Neuronales-OPENMP/la2/build/CMakeFiles/edit_cache.dir
+/home/rafa/Escritorio/GitHub/Redes-Neuronales-OPENMP/la2/build/CMakeFiles/la2.dir

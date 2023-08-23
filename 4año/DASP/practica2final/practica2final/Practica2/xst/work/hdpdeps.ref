@@ -1,0 +1,27 @@
+V3 19
+FL C:/i72gogia/Practica2/control_display.vhd 2021/04/21.14:56:28 P.20131013
+EN work/control_display 1619009799 FL C:/i72gogia/Practica2/control_display.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/control_display/Behavioral 1619009800 \
+      FL C:/i72gogia/Practica2/control_display.vhd EN work/control_display 1619009799 \
+      CP Div_frec CP cont_digito CP reg_desp CP decodificador
+FL C:/i72gogia/Practica2/cont_digito.vhd 2021/04/21.14:36:09 P.20131013
+EN work/cont_digito 1619009793 FL C:/i72gogia/Practica2/cont_digito.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/cont_digito/Behavioral 1619009794 \
+      FL C:/i72gogia/Practica2/cont_digito.vhd EN work/cont_digito 1619009793
+FL C:/i72gogia/Practica2/decodificador.vhd 2021/04/14.14:07:17 P.20131013
+EN work/decodificador 1619009797 FL C:/i72gogia/Practica2/decodificador.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/decodificador/Behavioral 1619009798 \
+      FL C:/i72gogia/Practica2/decodificador.vhd EN work/decodificador 1619009797
+FL C:/i72gogia/Practica2/Div_frec.vhd 2021/04/14.13:29:32 P.20131013
+EN work/Div_frec 1619009791 FL C:/i72gogia/Practica2/Div_frec.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Div_frec/Behavioral 1619009792 \
+      FL C:/i72gogia/Practica2/Div_frec.vhd EN work/Div_frec 1619009791
+FL C:/i72gogia/Practica2/reg_desp.vhd 2021/04/21.13:24:02 P.20131013
+EN work/reg_desp 1619009795 FL C:/i72gogia/Practica2/reg_desp.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/reg_desp/Behavioral 1619009796 \
+      FL C:/i72gogia/Practica2/reg_desp.vhd EN work/reg_desp 1619009795

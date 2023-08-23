@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/i72gogia/Practica2/control_display.xst" -ofn "C:/i72gogia/Practica2/control_display.syr" 

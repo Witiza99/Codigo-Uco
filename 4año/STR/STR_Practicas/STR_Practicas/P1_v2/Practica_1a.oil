@@ -1,0 +1,88 @@
+#include "implementation.oil"
+
+CPU ATMEL_AT91SAM7S256 // CPU del Lego NXT
+{
+	OS LEJOS_OSEK
+  	{
+    	STATUS = EXTENDED;
+    	STARTUPHOOK = FALSE;
+    	ERRORHOOK = FALSE;
+    	SHUTDOWNHOOK = FALSE;
+    	PRETASKHOOK = FALSE;
+    	POSTTASKHOOK = FALSE;
+    	USEGETSERVICEID = FALSE;
+    	USEPARAMETERACCESS = FALSE;
+    	USERESSCHEDULER = FALSE;
+  	};
+	
+	APPMODE sample_appmode1{}; // Modo de aplicacion por defecto
+
+  	COUNTER Contador
+  	{
+		MINCYCLE	= 1; // Mínimo valor para que active las alarmas
+		MAXALLOWEDVALUE	= 15000;
+		TICKSPERBASE	= 1; // 1 tick = 1 ms
+  	};
+	
+	ALARM Alarma1
+  	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK
+		{
+			TASK 	= Final;
+		};
+		
+		AUTOSTART	= TRUE
+		{
+			ALARMTIME 	= 10000;
+			CYCLETIME	= 1;
+			APPMODE	= sample_appmode1;
+		};
+	};
+	
+	ALARM Alarma2
+	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK 
+		{
+			TASK 	= Calibrar;
+		};
+
+		AUTOSTART	= TRUE
+		{
+			ALARMTIME 	= 10;
+			CYCLETIME	= 10;
+			APPMODE	= sample_appmode1;
+		};
+	};
+	
+	TASK Avance
+	{
+		AUTOSTART = TRUE
+		{
+			APPMODE = sample_appmode1;
+		};
+		PRIORITY 	= 1;
+		ACTIVATION 	= 1;
+		SCHEDULE 	= FULL;
+		STACKSIZE 	= 512;
+	};
+
+	TASK Calibrar
+	{
+		AUTOSTART = FALSE;
+		PRIORITY 	= 2;
+		ACTIVATION 	= 1;
+		SCHEDULE 	= FULL;
+		STACKSIZE 	= 512;
+	};
+   
+	TASK Final
+	{
+		AUTOSTART	= FALSE;
+		PRIORITY 	= 2;
+		ACTIVATION 	= 1;
+		SCHEDULE 	= FULL;
+		STACKSIZE 	= 512;
+	};   
+};

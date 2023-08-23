@@ -1,0 +1,51 @@
+/*
+ * util.h
+ *
+ *  Created on: 06/03/2015
+ *      Author: pedroa
+ */
+
+#ifndef UTIL_H_
+#define UTIL_H_
+#include <cstdlib>  // Para establecer la semilla srand() y generar números aleatorios rand()
+
+namespace util{
+int * integerRandomVectorWithoutRepeating(int min, int max, int howMany){
+        int total = max-min+1;
+        int* numbersToBeSelected = new int[total];
+        int* numbersSelected = new int[howMany];
+        // Initialize the list of possible selections
+        for(int i = 0; i < total; i++)
+                numbersToBeSelected[i] = min+i;
+
+        for(int i=0; i < howMany; i++)
+        {
+                int selectedNumber = rand() % (total-i);
+                // Store the selected number
+                numbersSelected[i]=numbersToBeSelected[selectedNumber];
+                // We include the last valid number in numbersToBeSelected, in this way
+                // all numbers are valid until total-i-1
+                numbersToBeSelected[selectedNumber]=numbersToBeSelected[total-i-1];
+        }
+        delete [] numbersToBeSelected;
+        return numbersSelected;
+
+};
+
+//function that gives you the index of the maximun element in a vector
+int maxIndexVector(double *vector, int n){
+  int maxIndex = 0;
+  double max = vector[0];
+  for (int i = 1; i < n; i++) {
+    if (vector[i] > max) {
+      max = vector[i];
+      maxIndex = i;
+    }
+  }
+  return maxIndex;
+};
+
+}
+
+
+#endif /* UTIL_H_ */

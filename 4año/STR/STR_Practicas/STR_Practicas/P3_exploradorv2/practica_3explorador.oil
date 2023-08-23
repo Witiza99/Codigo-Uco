@@ -1,0 +1,196 @@
+#include "implementation.oil"
+
+CPU ATMEL_AT91SAM7S256 // CPU del Lego NXT
+{
+	OS LEJOS_OSEK
+  	{
+    	STATUS = EXTENDED;
+    	STARTUPHOOK = FALSE;
+    	ERRORHOOK = FALSE;
+    	SHUTDOWNHOOK = FALSE;
+    	PRETASKHOOK = FALSE;
+    	POSTTASKHOOK = FALSE;
+    	USEGETSERVICEID = FALSE;
+    	USEPARAMETERACCESS = FALSE;
+    	USERESSCHEDULER = FALSE;
+  	};
+	
+	APPMODE sample_appmode1{}; // Modo de aplicacion por defecto.
+
+  	COUNTER Contador
+  	{
+		MINCYCLE	= 1; //minimo valor para que active alarmas
+		MAXALLOWEDVALUE	= 15000;
+		TICKSPERBASE	= 1; //1 tick = 1 ms
+  	};
+
+	ALARM AlarmaBusqueda
+	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK 
+		{
+			TASK 	= Busqueda;
+		};
+
+		AUTOSTART	= TRUE
+		{
+			ALARMTIME 	= 10;
+			CYCLETIME	= 9999;
+			APPMODE	= sample_appmode1;
+		};
+	};
+
+	ALARM AlarmaPosicionamiento
+	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK 
+		{
+			TASK 	= Posicionamiento;
+		};
+
+		AUTOSTART	= FALSE;
+	};
+
+	ALARM AlarmaAvance
+	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK 
+		{
+			TASK 	= Avance;
+		};
+
+		AUTOSTART	= FALSE;
+	};
+
+
+	ALARM AlarmaCalibrar
+	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK 
+		{
+			TASK 	= Calibrar;
+		};
+
+		AUTOSTART	= FALSE;
+	};
+
+	ALARM AlarmaGiro45gradosDerecha
+	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK 
+		{
+			TASK 	= Giro45gradosDerecha;
+		};
+
+		AUTOSTART	= FALSE;
+	};
+
+	ALARM AlarmaPulsador
+	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK 
+		{
+			TASK 	= Pulsador;
+		};
+
+		AUTOSTART	= TRUE
+		{
+			ALARMTIME 	= 20;
+			CYCLETIME	= 20;
+			APPMODE	= sample_appmode1;
+		};
+	};
+
+	ALARM AlarmaSonar
+	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK 
+		{
+			TASK 	= UsarSonar;
+		};
+
+		AUTOSTART	= FALSE;
+	};
+
+	EVENT evento
+	{
+		MASK = 1;
+	};
+
+	TASK Pulsador
+	{
+        AUTOSTART 	= FALSE;
+    	PRIORITY 	= 8;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+	};
+	
+	TASK Avance
+	{
+		AUTOSTART = FALSE;
+		PRIORITY 	= 1;
+		ACTIVATION 	= 1;
+		SCHEDULE 	= FULL;
+		STACKSIZE 	= 512;
+		EVENT 		= evento;
+	};
+
+	TASK Calibrar
+	{
+		AUTOSTART 	= FALSE;
+		PRIORITY 	= 2;
+		ACTIVATION 	= 1;
+		SCHEDULE 	= FULL;
+		STACKSIZE 	= 512;
+	};
+
+	TASK UsarSonar
+	{
+		AUTOSTART = FALSE;
+		PRIORITY 	= 7;
+		ACTIVATION 	= 1;
+		SCHEDULE 	= FULL;
+		STACKSIZE 	= 512;
+	};
+
+	TASK PararRobot
+	{
+        AUTOSTART 	= FALSE;
+    	PRIORITY 	= 5;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+	};
+
+	TASK Giro45gradosDerecha
+	{
+        AUTOSTART 	= FALSE;
+    	PRIORITY 	= 4;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+		EVENT 		= evento;
+	};
+
+	TASK Busqueda
+	{
+        AUTOSTART 	= FALSE;
+    	PRIORITY 	= 6;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+		EVENT 		= evento;
+	};
+	
+	TASK Posicionamiento
+	{
+        AUTOSTART 	= FALSE;
+    	PRIORITY 	= 7;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+		EVENT 		= evento;
+	};
+
+};

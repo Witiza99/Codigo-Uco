@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/xinlinx/Practica1/Registro.xst" -ofn "E:/xinlinx/Practica1/Registro.syr" 

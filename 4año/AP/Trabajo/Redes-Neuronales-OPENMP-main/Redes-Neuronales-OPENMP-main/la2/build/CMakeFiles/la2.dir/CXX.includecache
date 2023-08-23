@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rafa/Escritorio/GitHub/Redes-Neuronales-OPENMP/la2/MultilayerPerceptron.h
+
+/home/rafa/Escritorio/GitHub/Redes-Neuronales-OPENMP/la2/la2.cpp
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+iostream
+-
+ctime
+-
+cstdlib
+-
+string.h
+-
+math.h
+-
+float.h
+-
+omp.h
+-
+MultilayerPerceptron.h
+/home/rafa/Escritorio/GitHub/Redes-Neuronales-OPENMP/la2/MultilayerPerceptron.h
+

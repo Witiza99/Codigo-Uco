@@ -1,0 +1,1 @@
+Se han borrado las graficas de salida 3 y 4 por que el tamaño era demasiado grande para enviar la practica, al volver a ejecutar deberían de volve a crearse en sus respectivas carpetas.

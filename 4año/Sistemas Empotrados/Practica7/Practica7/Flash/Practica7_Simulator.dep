@@ -1,0 +1,13 @@
+Dependencies for Project 'Practica7', Target 'Simulator': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x5FC0C6A8)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips-o .\flash\lpc2300.o --depend .\flash\lpc2300.d)
+F (.\Retarget.c)(0x53466EA2)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips-o .\flash\retarget.o --omf_browse .\flash\retarget.crf --depend .\flash\retarget.d)
+I (E:\ARM\ARMCC\include\stdio.h)(0x5419E3CC)
+I (E:\ARM\ARMCC\include\rt_misc.h)(0x5419E3CC)
+I (E:\ARM\ARMCC\include\stddef.h)(0x5419E3CA)
+I (E:\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+F (.\Serial.c)(0x5F96FADA)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips-o .\flash\serial.o --omf_browse .\flash\serial.crf --depend .\flash\serial.d)
+I (E:\ARM\Inc\Philips\LPC23xx.H)(0x53467C8A)
+F (.\HAL.c)(0x5FC0B7AA)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips-o .\flash\hal.o --omf_browse .\flash\hal.crf --depend .\flash\hal.d)
+I (E:\ARM\Inc\Philips\LPC23xx.H)(0x53467C8A)
+I (timers.h)(0x5FC0B71A)
+F (.\Practica6.c)(0x00000000)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips-o .\flash\practica6.o --omf_browse .\flash\practica6.crf --depend .\flash\practica6.d)

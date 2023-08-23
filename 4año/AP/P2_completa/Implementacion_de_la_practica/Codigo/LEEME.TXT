@@ -1,0 +1,4 @@
+A la hora de realizar los script sobre este codigo, realizaba cambios al tamaño de la matriz para probar con 4000 o 4096
+ya que no queria realizar 1 fichero nuevo para un cambio, y no era posible dale el tamaño de las matrices, ya que al realizar
+el programa la memoria es estatica y global para el programa.
+Para el programa en serie es a mano, no tiene script y no se le pasan parametros sino que se modifican en el código.

@@ -1,0 +1,5 @@
+Datos de bucle ikj en paralelo para matrices de 4000 valores
+2	595.170742
+4	533.940291
+8	614.392011
+16	621.035853

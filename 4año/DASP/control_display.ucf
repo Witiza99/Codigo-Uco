@@ -1,0 +1,45 @@
+#Seleccion de display 7-segmentos (Anodos)
+NET AN<3> LOC=E13;
+NET AN<2> LOC=F14;
+NET AN<1> LOC=G14;
+NET AN<0> LOC=D14;
+
+NET DP LOC=P16;
+#segmentos del display 7-segmentos (catodos)
+NET LED<0> LOC=N16;
+NET LED<1> LOC=F13;
+NET LED<2> LOC=R16;
+NET LED<3> LOC=P15;
+NET LED<4> LOC=N15;
+NET LED<5> LOC=G13;
+NET LED<6> LOC=E14;
+
+#diodos leds
+#NET ld0 LOC = "K12";
+#NET ld1 LOC = "P14";
+#NET ld2 LOC = "L12";
+#NET ld3 LOC = "N14";
+#NET ld4 LOC = "P13";
+#NET ld5 LOC = "N12";
+#NET ld6 LOC = "P12";
+#NET ld7 LOC = "P11";
+
+#pulsadores
+#NET btn0 LOC=M13;
+#NET btn1 LOC=M14;
+#NET btn2 LOC=L13;
+NET Reset LOC=L14;
+
+#CLK del sistema
+NET clk LOC=T9; 
+
+#conmutadores
+#NET switch<0> LOC=F12;
+#NET switch<1> LOC=G12;
+#NET switch<2> LOC=H14;
+#NET switch<3> LOC=H13;
+#NET switch<4> LOC=J14;
+#NET switch<5> LOC=J13;
+#NET switch<6> LOC=K14;
+#NET switch<7> LOC=K13;
+

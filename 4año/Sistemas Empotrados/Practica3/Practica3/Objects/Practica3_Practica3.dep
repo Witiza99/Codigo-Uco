@@ -1,0 +1,16 @@
+Dependencies for Project 'Practica3', Target 'Practica3': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x53468A90)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips--list .\listings\lpc2300.lst --xref -o .\objects\lpc2300.o --depend .\objects\lpc2300.d)
+F (C:\Keil_v5\ARM\Boards\Keil\MCB2300\Blinky\Retarget.c)(0x53468AC2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\objects\retarget.o --omf_browse .\objects\retarget.crf --depend .\objects\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5419F1DC)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x5419F1DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5419F1DA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419F1DA)
+F (C:\Keil_v5\ARM\Boards\Keil\MCB2300\Blinky\Serial.c)(0x5F96FAD9)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\objects\serial.o --omf_browse .\objects\serial.crf --depend .\objects\serial.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+F (.\Practica3.c)(0x5F9700C7)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\objects\practica3.o --omf_browse .\objects\practica3.crf --depend .\objects\practica3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5419F1DC)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+I (misTipos.h)(0x5F8DBB46)
+I (Practica3.h)(0x5F97004A)
+F (.\HAL.c)(0x5F96FD46)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\objects\hal.o --omf_browse .\objects\hal.crf --depend .\objects\hal.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)

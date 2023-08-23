@@ -1,0 +1,6 @@
+soybean_mod.arff		77.22074468085107
+segment-challenge.arff	94.57142857142857
+wine.arff				91.08974358974359
+iris.arff				93.0
+glass.arff				59.142857142857146
+segment-test_mod.arff	91.19360902255639

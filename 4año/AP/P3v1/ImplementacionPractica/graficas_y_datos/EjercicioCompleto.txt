@@ -1,0 +1,25 @@
+Ejercicio Completo:
+OMP_ijk_bucle_externo:
+400.462762:
+OMP_ijk_bucle_interno:
+438.023429:
+2	692.169087:
+4	673.620959:
+8	551.842739:
+16	552.199566:
+OMP_jki_bucle_externo:
+1910.095665:
+OMP_jki_bucle_interno:
+602.741947:
+2	842.029236:
+4	588.591634:
+8	1896.658553:
+16	3326.716443:
+OMP_ikj_bucle_externo:
+132.572400:
+OMP_ikj_bucle_interno:
+190.886303:
+2	272.414212:
+4	145.713793:
+8	151.565951:
+16	153.939680:

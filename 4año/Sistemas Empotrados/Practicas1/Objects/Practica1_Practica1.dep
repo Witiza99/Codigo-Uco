@@ -1,0 +1,13 @@
+Dependencies for Project 'Practica1', Target 'Practica1': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x53468A90)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips--list .\listings\lpc2300.lst --xref -o .\objects\lpc2300.o --depend .\objects\lpc2300.d)
+F (E:\ARM\Boards\Keil\MCB2300\Blinky\Retarget.c)(0x53468AC2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips-o .\objects\retarget.o --omf_browse .\objects\retarget.crf --depend .\objects\retarget.d)
+I (E:\ARM\ARMCC\include\stdio.h)(0x5419F1DC)
+I (E:\ARM\ARMCC\include\rt_misc.h)(0x5419F1DC)
+I (E:\ARM\ARMCC\include\stddef.h)(0x5419F1DA)
+I (E:\ARM\ARMCC\include\stdint.h)(0x5419F1DA)
+F (E:\ARM\Boards\Keil\MCB2300\Blinky\Serial.c)(0x53468AC2)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips-o .\objects\serial.o --omf_browse .\objects\serial.crf --depend .\objects\serial.d)
+I (E:\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+F (.\Practica1.c)(0x5F7B554F)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I E:\ARM\RV31\INC-I E:\ARM\CMSIS\Include-I E:\ARM\Inc\Philips-o .\objects\practica1.o --omf_browse .\objects\practica1.crf --depend .\objects\practica1.d)
+I (E:\ARM\ARMCC\include\stdio.h)(0x5419F1DC)
+I (E:\ARM\Inc\Philips\LPC23xx.h)(0x53468A9A)
+F (.\Resumen.txt)(0x5F7B4ECF)()

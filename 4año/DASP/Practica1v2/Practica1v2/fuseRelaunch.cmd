@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/xinlinx/Practica1v2/test_practica1_isim_beh.exe" -prj "E:/xinlinx/Practica1v2/test_practica1_beh.prj" "work.test_practica1" 

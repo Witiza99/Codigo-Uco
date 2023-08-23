@@ -1,0 +1,9 @@
+--cpu ARM7TDMI
+".\objects\lpc2300.o"
+".\objects\retarget.o"
+".\objects\serial.o"
+".\objects\practica3.o"
+".\objects\hal.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Practica3.map" -o .\Objects\Practica3.axf

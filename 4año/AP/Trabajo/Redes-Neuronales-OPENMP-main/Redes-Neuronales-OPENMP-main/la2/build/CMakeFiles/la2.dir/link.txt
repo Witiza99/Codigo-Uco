@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -fopenmp -O2    CMakeFiles/la2.dir/la2.cpp.o CMakeFiles/la2.dir/MultilayerPerceptron.cpp.o CMakeFiles/la2.dir/util.cpp.o  -o la2 

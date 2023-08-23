@@ -1,0 +1,21 @@
+Dependencies for Project 'Practica5', Target 'Simulator': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x53467CB2)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\lpc2300.o --depend .\flash\lpc2300.d)
+F (.\Retarget.c)(0x53467CB2)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\retarget.o --omf_browse .\flash\retarget.crf --depend .\flash\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5419F1DC)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x5419F1DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5419F1DA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419F1DA)
+F (.\Serial.c)(0x5F96FADA)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\serial.o --omf_browse .\flash\serial.crf --depend .\flash\serial.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+F (.\Practica5.c)(0x5FB2A6B3)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\practica5.o --omf_browse .\flash\practica5.crf --depend .\flash\practica5.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5419F1DC)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+I (misTipos.h)(0x5FA96A76)
+I (Practica5.h)(0x5FB2A57D)
+F (.\HAL.c)(0x5FB2A732)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\hal.o --omf_browse .\flash\hal.crf --depend .\flash\hal.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+I (Practica5.h)(0x5FB2A57D)
+F (.\IRQ.c)(0x5FB2ABEC)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\irq.o --omf_browse .\flash\irq.crf --depend .\flash\irq.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+I (misTipos.h)(0x5FA96A76)
+I (Practica5.h)(0x5FB2A57D)

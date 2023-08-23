@@ -1,0 +1,5 @@
+set -tmpdir "C:/i72gogia/Practica2/xst/projnav.tmp"
+set -xsthdpdir "C:/i72gogia/Practica2/xst"
+elaborate
+-ifn decodificador.prj
+-ifmt mixed

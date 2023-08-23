@@ -1,0 +1,8 @@
+Datos de bucle ijk en paralelo para matrices de 4000 valores:
+957.320773
+Datos de bucle ijk en paralelo para matrices de 4096 valores:
+3224.076918
+Datos de bucle ikj en paralelo para matrices de 4000 valores:
+407.826484
+Datos de bucle ikj en paralelo para matrices de 4096 valores:
+424.097162

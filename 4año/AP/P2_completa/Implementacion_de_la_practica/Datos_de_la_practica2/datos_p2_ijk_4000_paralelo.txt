@@ -1,0 +1,4 @@
+Datos de bucle ijk en paralelo para matrices de 4000 valores
+4	466.807912
+8	525.752296
+16	570.233320

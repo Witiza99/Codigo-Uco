@@ -1,0 +1,19 @@
+Dependencies for Project 'Practica9', Target 'Simulator': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x5FC0C6A6)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\lpc2300.o --depend .\flash\lpc2300.d)
+F (.\Retarget.c)(0x53467CB2)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\retarget.o --omf_browse .\flash\retarget.crf --depend .\flash\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5419F1DC)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x5419F1DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5419F1DA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419F1DA)
+F (.\Serial.c)(0x5F96FADA)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\serial.o --omf_browse .\flash\serial.crf --depend .\flash\serial.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+F (.\HAL.c)(0x5FC9EFEC)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\hal.o --omf_browse .\flash\hal.crf --depend .\flash\hal.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+F (.\Practica_SO_GPIO_1.c)(0x5FC9F4DB)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\practica_so_gpio_1.o --omf_browse .\flash\practica_so_gpio_1.crf --depend .\flash\practica_so_gpio_1.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.h)(0x53468A9A)
+I (misTipos.h)(0x5FC0B638)
+I (GPIO_P1.h)(0x5FC9F3F2)
+F (.\Instand-UP.c)(0x5FC9EF07)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-o .\flash\instand-up.o --omf_browse .\flash\instand-up.crf --depend .\flash\instand-up.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC23xx.H)(0x53468A9A)
+I (misTipos.h)(0x5FC0B638)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5419F1DC)

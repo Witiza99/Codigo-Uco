@@ -1,0 +1,71 @@
+int const MAX_PRIMOS = 50;
+int primosEncontrados[MAX_PRIMOS];
+
+
+bool esXdivisorY(int x, int y)
+{		
+	// IMPLEMENTA
+	// Nota --> El operando % devuelve el resto de dividir dos números.
+  if(y%x == 0)
+    return true;
+  return false;
+}
+
+// Devuelve el número de divisores del parámetro "num"
+// Ejemplo: numeroDivisores(10) devuelve 3.
+int numeroDivisores(int num)
+{
+	// IMPLEMENTA
+  int numeroDivisores = 0;
+  for(int i=1; i<num; i++){
+    if(esXdivisorY(i, num)){
+      numeroDivisores++;
+    }
+  }
+  return numeroDivisores;
+}
+  
+bool esPrimo(int numero){
+	// IMPLEMENTA
+  if(numeroDivisores(numero) > 1)
+    return false;
+  return true;
+}
+
+// Busca y almacena los N primeros primos (MAX_PRIMOS) en el array "primosEncontrados". 
+// Empieza a buscar a partir del valor "inicio" este inclusive.
+void buscarPrimos(int inicio){
+	// IMPLEMENTA
+  int contador = 0;
+  while(contador != MAX_PRIMOS){
+    if(esPrimo(inicio)){
+      primosEncontrados[contador]=inicio;
+      contador++;
+    }
+    inicio++;
+  }
+}
+
+// Imprime los numeros primos almacenados en "primosEncontrados"
+// Usa el siguiente formato: "Numero Primo [indice] = numero primo";
+void imprimirPrimosEncontrados(){
+	// IMPLEMENTA
+  for(int i=0; i<MAX_PRIMOS; i++){
+    Serial.print("Numero Primo [");
+    Serial.print(i);
+    Serial.print("] = ");
+    Serial.println(primosEncontrados[i]);
+  }
+}
+
+void setup()
+{      
+  Serial.begin(9600); 
+  buscarPrimos(50);
+  imprimirPrimosEncontrados();
+}
+
+void loop()
+{  
+	delay(5000);
+}
