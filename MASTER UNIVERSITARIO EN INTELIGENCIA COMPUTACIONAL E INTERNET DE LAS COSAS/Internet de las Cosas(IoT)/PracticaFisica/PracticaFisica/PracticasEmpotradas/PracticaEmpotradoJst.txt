@@ -1,0 +1,1 @@
+En el fichero PracticaEmpotradoJst.py se ha realizado un código que permite, dependiendo del ángulo de un joystick, encender un led con distintos colores. Para ello se han creado dos tareas, una tarea gestiona el funcionamiento del joystick y la segunda tarea espera a que la primera tarea le pase los parametros rgb para encender y modificar el led.
