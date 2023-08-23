@@ -1,0 +1,12 @@
+io/realm/DefaultRealmModuleMediator.java
+ io.realm.DefaultRealmModuleMediator
+com/example/locationtrack/BuildConfig.java
+ com.example.locationtrack.BuildConfig
+io/realm/DefaultRealmModule.java
+ io.realm.DefaultRealmModule
+io/realm/com_example_locationtrack_LocationRealmProxyInterface.java
+ io.realm.com_example_locationtrack_LocationRealmProxyInterface
+io/realm/com_example_locationtrack_LocationRealmProxy.java
+ io.realm.com_example_locationtrack_LocationRealmProxy
+ io.realm.com_example_locationtrack_LocationRealmProxy$ClassNameHelper
+ io.realm.com_example_locationtrack_LocationRealmProxy$LocationColumnInfo

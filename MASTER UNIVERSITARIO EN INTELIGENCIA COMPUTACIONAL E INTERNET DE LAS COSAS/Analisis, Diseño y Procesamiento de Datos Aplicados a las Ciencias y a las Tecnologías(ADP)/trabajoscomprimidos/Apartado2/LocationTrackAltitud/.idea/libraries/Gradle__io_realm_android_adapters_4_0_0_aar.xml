@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: io.realm:android-adapters:4.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1475f814651e8c919efe17243dfb74b7/transformed/android-adapters-4.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/376c4a1c98185f9175ff82691945ad65/transformed/android-adapters-4.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/94e09469cc1d88e944bde5b02d4c86a0/transformed/android-adapters-4.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/94e09469cc1d88e944bde5b02d4c86a0/transformed/android-adapters-4.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/94e09469cc1d88e944bde5b02d4c86a0/transformed/android-adapters-4.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/android-adapters/4.0.0/788e279a0ae20744141f3988d163b67ab8f40cb2/android-adapters-4.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/android-adapters/4.0.0/1e638ee14d888201bd5f27b351e600a1ad7d054/android-adapters-4.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

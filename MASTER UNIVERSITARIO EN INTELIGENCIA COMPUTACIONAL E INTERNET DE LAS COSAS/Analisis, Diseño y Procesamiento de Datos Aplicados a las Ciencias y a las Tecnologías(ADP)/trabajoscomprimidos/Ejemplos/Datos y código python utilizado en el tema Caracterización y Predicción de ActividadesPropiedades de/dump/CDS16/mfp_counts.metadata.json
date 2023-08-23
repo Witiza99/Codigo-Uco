@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"675bc28dbe5c48a8b2844db4c42e78a5","collectionName":"mfp_counts","type":"collection"}
