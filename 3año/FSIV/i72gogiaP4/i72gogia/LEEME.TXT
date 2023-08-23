@@ -1,0 +1,21 @@
+He realizado la práctica completa, también voy a dejar el código usado para calibrar la cámara que es una adaptación a el código visto en estos videos:
+-https://www.youtube.com/watch?v=HYDFBhB-yFg
+-https://www.youtube.com/watch?v=N3Pm1uvW4t8
+-https://www.youtube.com/watch?v=jfvh_F-jjzE
+
+Lo he modificado para mi uso.
+Para ejecutar seria necesario cambiar la direccion(dentro del cdigo) y poner en la consola lo siguiente:
+./calibracion <input>(la camara o video) <rows>(filas 5) <cols>(columnas 6) <size>(tamaño 0.04) <nimg>(numero de imagenes para calibrar)
+
+Tras ejecutarlo se realizan fotos con enter del video introducido hasta cumplir con nimg(una vez realizados pulsar enter en linea de comando para seguir con la ejecución), tras esto muestra los patrones y una vez se obtienen los parametros se pregunta si se quiere ver la camara calibrada frente a la no calibrada para compara
+
+Paso una carpeta imagen para que se puedan ejecutar la entrada de linea de comandos con algún ejemplo.
+
+-Para solo los ejes pintados
+./augreal 5 6 0.04 ../calibrado/imagenes/Datos_cam.yml 1
+
+-Para imagen
+./augreal 5 6 0.04 ../calibrado/imagenes/Datos_cam.yml 1 -i=../imagenes/flor.jpg
+
+-Para video
+./augreal 5 6 0.04 ../calibrado/imagenes/Datos_cam.yml 1 -v=../imagenes/campus_000_002.avi

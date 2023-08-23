@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/Entero.cpp.o CMakeFiles/main.dir/funciones.cpp.o CMakeFiles/main.dir/funcionesbajonivel.cpp.o  -o main 

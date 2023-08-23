@@ -1,0 +1,158 @@
+<!Doctype html>
+<html>
+
+	<head>
+		<title>Busqueda</title>
+		<author Antonio Gómez Giménez>
+		<meta charset="UTF-8">
+		<meta name="nombre" content="Página de Busqueda">
+		<meta name="palabras_clave" content="HTML,CSS,JavaScript">
+		<link rel="icon" href="img/logo.ico">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+		<link href="css/estilos_Antonio.css" rel="stylesheet" type="text/css"/>
+		<link href="css/estilos_HF.css" rel="stylesheet" type="text/css"/>
+		<script src="js/functionheader.js" type="text/javascript"></script>
+		<script src="js/funciones_Antonio.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+		<!-- ******************* Inicio Cabecera ********************************   -->
+			<header id="cabecera">
+				<div class="cab-izq">
+					<figure id="logo"> 
+						<a href="home.html"><img src="img/logo.png" alt="logo_pagina"/></a>
+					</figure>
+				</div>
+				<div class="cab-cent">
+					<section id="seleccion_idioma" name="seleccion_idioma">
+						<select>
+							<option value="ES">ES</option>
+							<option value="EN">EN</option>
+						</select>
+					</section>
+				</div>
+				<section class="titulo">
+					<!-- <img src="img/ciencia3.png" alt=""/> -->
+					<h2 id="titulo">Fund the Science</h2>
+				</section> 
+				<!-- ************************************************************** -->
+				<!-- Se controla la muestra del boton con javascript, dependiendo de la pagina que
+				 necesite mostrar alguna informacion para el usuario -->
+				<div class="cab-der">
+					<!-- <section>
+						<a href="#" id="acceso">Mi cuenta / Registrarse</a>
+					</section> -->
+				</div>
+				<div class="relleno-cab"></div>
+				<!-- ********************* FIN DE COMENTARIO ********************** -->
+				<!-- ************************************************************** -->
+			</header>
+			<!-- ******************* Fin Cabecera ********************************   -->		
+
+		<!-- ******************* Inicio Busqueda ********************************   -->
+		<div id="cuerpo_busqueda">
+			<div class="bus_izquierda">
+				<form role="search" name="form_busq">
+				 	<div class="buscador">
+				  		<input type="search" id="miBusqueda" name="q" placeholder="Buscar proyecto..." aria-label="Buscar en el contenido del sitio" size="12" required minlength="3" maxlength="21" >
+				  		<button id="Prueba_boton">Buscar</button>
+				  		<span class="validity"></span>
+				 	</div>
+				</form>
+				<form method="post" >
+					<div class="buscador_checkbox">
+				  		<p>
+				   		 	<input type="checkbox" name="autor" value="si"> Autor<br>
+				   	 		<input type="checkbox" name="propietario" value="si"> Propietario<br>
+				   			<input type="checkbox" name="miembros" value="si"> Miembros<br>
+				   			<input type="checkbox" name="materia" value="si"> Materia<br>
+				   			<input type="checkbox" name="universidad" value="si"> Universidad<br>
+				   			<input type="checkbox" name="empresa" value="si"> Empresa<br>
+				 			<input type="submit" value="Realizar Busqueda"></p>
+					</div>
+				</form>
+			</div>
+			<div class="bus_derecha">
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<a href="Detalle_Proyecto.html"><img src="img/Logo_UCO.png" alt="Imagen del proyecto:"/></a>
+					</div>
+					<div class="bus_titulo_proyecto">
+					<h4><a href="Detalle_Proyecto.html">T&iacutetulo del proyecto </a></h4>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>
+
+				<!-- ******************* Bloques de ejemplo ********************************   -->
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<a href="Detalle_Proyecto.html"><img src="img/Logo_UCO.png" alt="Imagen del proyecto:"/></a>
+					</div>
+					<div class="bus_titulo_proyecto">
+						<section><h4><a href="Detalle_Proyecto.html">T&iacutetulo del proyecto </a></h4></section>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>	
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<a href="Detalle_Proyecto.html"><img src="img/Logo_UCO.png" alt="Imagen del proyecto:"/></a>
+					</div>
+					<div class="bus_titulo_proyecto">
+					<h4><a href="Detalle_Proyecto.html">T&iacutetulo del proyecto </a></h4>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<section><p>Descripcion del proyecto</p></section>
+					</div>
+				</div>	
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<a href="Detalle_Proyecto.html"><img src="img/Logo_UCO.png" alt="Imagen del proyecto:"/></a>
+					</div>
+					<div class="bus_titulo_proyecto">
+						<section><h4><a href="Detalle_Proyecto.html">T&iacutetulo del proyecto </a></h4></section>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<a href="Detalle_Proyecto.html"><img src="img/Logo_UCO.png" alt="Imagen del proyecto:"/></a>
+					</div>
+					<div class="bus_titulo_proyecto">
+						<section><h4><a href="Detalle_Proyecto.html">T&iacutetulo del proyecto </a></h4></section>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>
+				<div class="bloques">	
+					<div class="bus_img_proyecto">
+						<a href="Detalle_Proyecto.html"><img src="img/Logo_UCO.png" alt="Imagen del proyecto:"/></a>
+					</div>
+					<div class="bus_titulo_proyecto">
+						<section><h4><a href="Detalle_Proyecto.html">T&iacutetulo del proyecto </a></h4></section>
+					</div>
+					<div class="bus_descripcion_proyecto">
+						<p>Descripcion del proyecto</p>
+					</div>
+				</div>					
+			</div>
+		</div>
+		<!-- ******************* Fin Busqueda ********************************   -->
+
+
+			<!-- ******************* Inicio Footer ********************************   -->
+			<footer id="footer">			
+					<div class="boton_footer esp"><a href="faq.html#faq">FAQ</a></div>
+					<div class="boton_footer"><a href="faq.html#Sobre_nosotros">Contacta con nosotros</a></div>
+					<div class="boton_footer"><a href="faq.html#Contacto">¿Quienes somos?</a></div>
+				</footer>
+				<!-- ******************* Fin Footer ********************************   -->
+	</body>
+</html>

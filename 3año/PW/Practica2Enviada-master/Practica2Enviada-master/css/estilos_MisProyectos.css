@@ -1,0 +1,113 @@
+body{
+	background: lightgray;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cuerpo{
+	background-color: white;
+	padding-bottom: 90%;
+	padding-top: 2%;
+}
+
+#selector{
+	margin-left: 2%;
+	margin-bottom: 1%;
+}
+
+#Cizquierda{
+	float: left;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 4%;
+	margin-left: 2%;
+	width: 50%;
+}
+
+#proyectos{
+	border: 1px solid black;
+	overflow-y: scroll;
+	border-radius: 5px;
+	padding-right: 1%;
+	height: 1000px;
+}
+
+#proyectos #CProy{
+	margin: 10px;
+	width: 99px;
+	padding: 7px;
+}
+
+
+#proyectos #CProy button{
+	background-color: lightblue;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+
+#proyectos #CProy button:hover{
+	padding: 5px;
+	background-color: rgba(0, 0, 255, 0.411);
+}
+
+#proyectos #CProy button a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.proyecto{
+	margin: auto;
+	margin: 10px;
+	border: 1px solid black;
+	height: 240px;
+}
+
+.proyecto div{
+	float: left;
+}
+
+.proyecto div h3{
+	margin: 5px;
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+
+.proyecto div p{
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 1.5em;
+}
+
+.proyecto img{
+	height: 200px;
+	float: right;
+	margin: 10px;
+}
+
+#imgPrSelect{
+	/*border: 1px solid rgba(0, 0, 0, 0.425);
+	border-radius: 10px;*/
+	margin-right: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	float: right;
+	height: 495px;
+	width: 40%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#imgPrSelect img{
+	height: 495px;
+	width: auto;
+}
+
+#botPag{
+	margin: 1%;
+	float: left;
+}

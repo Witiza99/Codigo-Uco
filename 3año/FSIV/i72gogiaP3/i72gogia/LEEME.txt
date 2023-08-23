@@ -1,0 +1,7 @@
+Solo he realizado la parte obligatoria, los flag -i y -c están vacios
+Es la vesión dos arreglando los fallos que tenía
+
+./realce -f=0 -g=0 ../data/ciclista_original.jpg copia.jpg
+./realce -f=0 -g=1 ../data/ciclista_original.jpg copia.jpg
+./realce -f=1 -g=0 ../data/ciclista_original.jpg copia.jpg
+./realce -f=1 -g=1 ../data/ciclista_original.jpg copia.jpg

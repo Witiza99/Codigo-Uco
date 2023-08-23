@@ -1,0 +1,3 @@
+El precio es de 100 euros sin iva y de 121 con iva.
+El espejo costó 37.5 euros
+La temperatura era de 20 grados.

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/main.x.dir/main.cpp.o CMakeFiles/main.x.dir/funciones.cpp.o CMakeFiles/main.x.dir/backtracking.cpp.o CMakeFiles/main.x.dir/vegas.cpp.o CMakeFiles/main.x.dir/ClaseTiempo.cpp.o CMakeFiles/main.x.dir/sistemaEcuaciones.cpp.o CMakeFiles/main.x.dir/parte_practica1_funciones.cpp.o  -o main.x 

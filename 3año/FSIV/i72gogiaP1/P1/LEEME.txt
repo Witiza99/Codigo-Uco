@@ -1,0 +1,2 @@
+He realizado la parte básica al completo y he intentado la parte del rectángulo interactivo. No he conseguido implementarlo correctamente, lo más que he conseguido es que se muestre el rectángulo antes de transformarse he incluso se puede dibujar varios rectángulos pero solo aparecera uno.
+La parte del polígono no la he hecho.

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/antoniogg/Escritorio/Algoritmica/pruebas_examen/p2/caballos.hpp
+iostream
+-
+cstdlib
+-
+cstdio
+-
+vector
+-
+
+/home/antoniogg/Escritorio/Algoritmica/pruebas_examen/p2/main.cpp
+caballos.hpp
+/home/antoniogg/Escritorio/Algoritmica/pruebas_examen/p2/caballos.hpp
+
+/home/antoniogg/Escritorio/Algoritmica/pruebas_examen/p2/prueba_caballos.cpp
+caballos.hpp
+/home/antoniogg/Escritorio/Algoritmica/pruebas_examen/p2/caballos.hpp
+

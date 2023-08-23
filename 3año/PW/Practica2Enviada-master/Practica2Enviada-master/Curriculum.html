@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>Curriculum</title>
+		<meta charset="UTF-8">
+		<meta name= "description" content="Curriculum de usuario">
+		<meta name= "keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name= "author" content="Oscar Godoy Calderón">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="img/logo.ico">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+		<link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+		<script src="js/functionheader.js" type="text/javascript"></script>
+		<script src="js/funcionesFormReg.js" type="text/javascript"></script>
+		<script src="js/funcionesJS.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="cuerpo">
+			<!-- ******************* Inicio Cabecera ********************************   -->
+			<header id="cabecera">
+				<div class="cab-izq">
+					<figure id="logo"> 
+						<a href="home.html"><img src="img/logo.png" alt="logo_pagina"/></a>
+					</figure>
+				</div>
+				<div class="cab-cent">
+					<section id="seleccion_idioma" name="seleccion_idioma">
+						<select>
+							<option value="ES">ES</option>
+							<option value="EN">EN</option>
+						</select>
+					</section>
+				</div>
+				<section class="titulo">
+					<!-- <img src="img/ciencia3.png" alt=""/> -->
+					<h2 id="titulo">Fund the Science</h2>
+				</section> 
+				<!-- ************************************************************** -->
+				<!-- Se controla la muestra del boton con javascript, dependiendo de la pagina que
+				 necesite mostrar alguna informacion para el usuario -->
+				<div class="cab-der">
+					<!-- <section>
+						<a href="#" id="acceso">Mi cuenta / Registrarse</a>
+					</section> -->
+				</div>
+				<div class="relleno-cab"></div>
+				<!-- ********************* FIN DE COMENTARIO ********************** -->
+				<!-- ************************************************************** -->
+			</header>
+			<!-- ******************* Fin Cabecera ********************************   -->
+			
+			
+			<div id="contenido-curr">
+				<div id="crear-curriculum">
+					<form id="form-curriculum" name="formcurriculum" method="POST">
+						<div>
+							<fieldset>
+								<legend>DATOS PERSONALES</legend>
+								<div class="camp-cur">
+									<input type="text" id="nombre" name="nombre" placeholder="Nombres y Apellidos" required="required"/>
+								</div>
+								<div class="sec-row-cur">
+									<div class="col-izq-cur">
+										<p>Redacta una breve introduccion:</p>
+										<textarea id="text-cur" name="text-cur" rows="5" cols="20" required="required"></textarea>
+									</div>
+									<div class="col-der-cur">
+										<input type="text" id="direccion" name="direccion" placeholder="Direccion" required="required"/>
+										<input type="email" id="email" name="email" placeholder="Correo electronico" required="required"/>
+										<span id="sp_mo"></span>
+										<input type="text" id="movil" name="movil" placeholder="Numero de telefono" maxlength="9" required="required"/>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						<div class="div-cur"></div>
+						<div>
+							<fieldset>
+								<legend>EXPERIENCIA PROFESIONAL</legend>
+								<div class="exp-laboral">
+									<textarea rows="5" name="exp-laboral" required="required"></textarea>
+								</div>
+								
+								<div class="thi-row-cur">
+									<div class="col-izq-cur">
+										<p>IDIOMAS</p>
+										
+										<input type="checkbox" name="curcheckidioma"/> Castellano<br>
+										<input type="checkbox" name="curcheckidioma" /> Ingles<br>
+										<input type="checkbox" name="curcheckidioma" /> Frances<br>
+										<input type="checkbox" name="curcheckidioma" /> Aleman<br>
+										<input type="checkbox" name="curcheckidioma" /> Otros<br>
+										<span id="errIdiomas" class="sp_mo"></span>
+
+									</div>
+									<div class="col-der-cur">
+										<p>ESTUDIOS</p>
+										<div class="exp-laboral">
+											<textarea rows="5" required="required"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="four-row-cur">
+									<div class="col-izq-cur">									
+										<p>LENGUAJES</p>
+										<input type="checkbox" name="curchecklanguage"/> C/C++<br>
+										<input type="checkbox" name="curchecklanguage" /> Fortran<br>
+										<input type="checkbox" name="curchecklanguage" /> MatLab<br>
+										<input type="checkbox" name="curchecklanguage" /> SQL<br>
+										<input type="checkbox" name="curchecklanguage" /> Otros<br>
+										<span id="errProgramacion" class="sp_mo"></span>
+									</div>
+									<div class="col-der-cur">
+										<p>REFERENCIAS</p>
+										<div class="exp-laboral">
+											<textarea rows="5" required="required"></textarea>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						<div class="">
+							<input type="submit" class="form-button" name="envio" value="Enviar"/>
+							<input type="reset" class="form-button" name="cancelar" value="Cancelar"/>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+			<!-- ******************* Inicio Footer ********************************   -->
+			<footer id="footer">			
+					<div class="boton_footer esp"><a href="faq.html#faq">FAQ</a></div>
+					<div class="boton_footer"><a href="faq.html#Sobre_nosotros">Contacta con nosotros</a></div>
+					<div class="boton_footer"><a href="faq.html#Contacto">¿Quienes somos?</a></div>
+				</footer>
+				<!-- ******************* Fin Footer ********************************   -->
+		</div>
+	</body>
+</html>

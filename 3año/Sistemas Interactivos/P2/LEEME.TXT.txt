@@ -1,0 +1,9 @@
+Esta calculadora esta orientada a gente ciega por ello he incluido un sistema de sonido, aparte he intentado que
+la funcionalidad se parecida a las calculadoras de android, por ejemplo que ocurre al pulsar una operación si
+ya se habia pulsado otra antes o por ejemplo si se le da a igual si solo ha introducido un número y una operación.
+En resumen, he intentado que sea lo más amigable posible con el usuario, incluso es capaz de adaptarse más o menos al tamaño de la ventana.
+
+
+Por último, he intentado probar el programa en los ordenadores de la uco, pero al usar una máquina virtual para conectarme
+ no tengo sonido, entonces no se si funciona correctamente en la uco. (Yo al hacerlo en windows el sonido funcionaba 
+correctamente asi que supongo que no debería de fallar)

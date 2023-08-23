@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset ="UTF-8">
+	<meta name= "description" content="Pagina principal">
+	<meta name= "keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name= "author" content="Andrés López Cárdenas">
+	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+	<link href="./css/estilos_HF.css" type="text/css" rel="stylesheet" />
+	<link href="./css/estilos_home.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<!-- ******************* Inicio Cabecera ********************************   -->
+	<header id="cabecera">
+		<div class="cab-izq">
+			<figure id="logo"> 
+				<img src="img/logo.png"/>
+			</figure>
+		</div>
+		<section class="titulo">
+				<!-- <img src="img/ciencia3.png" alt=""/> -->
+				<h2 id="titulo">Fund the Science</h2>
+		</section> 
+		<div class="cab-lang-home">
+			<section id="seleccion_idioma">
+				<select>
+					<option label="ES">ES</option>
+					<option label="EN">EN</option>
+				</select>
+			</section>
+			<div class="home-buscar">
+				<input type="search" placeholder="Buscar" />
+			</div>
+		</div>
+		<div class="relleno-cab"></div>
+	</header>
+	<!-- ******************* Fin Cabecera ********************************   -->
+	<div id="cuerpo">
+
+		<nav>
+			<ul id="menuSuperior">
+				<li><a href="./MisProyectos.html">Mis proyectos</a></li>
+				<li><a href="./Nuevo_Proyecto.html">Nuevo Proyecto</a></li>
+				<li><a href="./Categorias.html">Categor&iacuteas</a></li>
+				<li><a href="./Mi_perfil.html">Mi perfil</a></li>
+				<li><a href="./acceder.html">Acceder o Registrarse</a></li>
+			</ul>
+		</nav>
+
+		<!-- los proyectos se obtienen de la base de datos -->
+		<div id="PrDestacado">
+			<section>
+				<h1><strong>PROYECTO DESTACADO</strong></h3>
+			</section>
+			<div class="proyecto">
+				<aside>
+					<h3><strong>Titulo:</strong><a href="./Detalle_Proyecto.html"> Proyecto Destacado</a></h3>
+					<p>Peque&ntildea descripci&oacuten del proyecto</p>
+				</aside>
+				<img src="./img/Logo_UCO.png" alt="logo" >
+			</div>
+		</div>
+		<!-- los proyectos se obtienen de la base de datos -->
+		
+		<div id="SDestacado">
+			<section>
+				<h2><strong>Segundo proyecto destacado</strong></h2>
+			</section>
+			<div class="proyecto">
+				<aside>
+					<h3><strong>Titulo:</strong><a href="./Detalle_Proyecto.html"> Segundo proyecto destacado</a></h3>
+					<p>Peque&ntildea descripci&oacuten del proyecto</p>
+				</aside>
+				<img src="./img/Logo_UCO.png" alt="logo" >
+			</div>
+		</div>
+
+		<div id="TDestacado">
+			<section>
+				<h2><strong>Tercer proyecto destacado</strong></h2>
+			</section>
+			<div class="proyecto">
+				<aside>
+					<h3><strong>Titulo:</strong><a href="./Detalle_Proyecto.html"> Tercer proyecto destacado</a></h3>
+					<p>Peque&ntildea descripci&oacuten del proyecto</p>
+				</aside>
+				<figure>
+					<img src="./img/Logo_UCO.png" alt="logo" >
+				</figure>
+			</div>
+		</div>
+
+	</div>
+
+			<!-- ******************* Inicio Footer ********************************   -->
+			<footer id="footer">			
+					<div class="boton_footer esp"><a href="faq.html#faq">FAQ</a></div>
+					<div class="boton_footer"><a href="faq.html#Sobre_nosotros">Contacta con nosotros</a></div>
+					<div class="boton_footer"><a href="faq.html#Contacto">¿Quienes somos?</a></div>
+				</footer>
+				<!-- ******************* Fin Footer ********************************   -->
+</body>
+</html>

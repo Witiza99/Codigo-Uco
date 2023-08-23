@@ -1,0 +1,5 @@
+Para compilar es necesario realizarlo dentro de la carpeta build para que funcione el SCRIPT para la creacion de la grafica
+Dentro de build
+cmake ..
+make
+./main.x

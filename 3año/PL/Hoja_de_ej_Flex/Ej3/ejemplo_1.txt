@@ -1,0 +1,62 @@
+
+(*
+  Algoritmo de alumnos y sus notas para probar
+  que mi analizador léxico funcione correctamente
+*)
+
+#prueba de comentario de alumnos y sus notas
+
+para i := 1 hasta 30
+
+    escribir( nombre );
+    escribir( nota );
+
+fin_para;
+
+
+#Cantidad de aprobados y reprobados
+
+aprobados := 0
+
+reprobados := 35 - 35 + 2 - ( 1 * 1 / 1 + 1 );
+
+para i := 1 hasta 30
+
+    si nota( i ) > 11 entonces
+
+        aprobados := aprobados + 1
+
+    sino
+
+        reprobados := reprobados + 1
+
+    fin_si;
+
+fin_para;
+
+ 
+
+#Porcentaje de aprobados y reprobados
+
+pa := (aprobados * 100) / 30 #porcentaje de aprobados
+
+pr := (reprobados * 100) / 30 #porcentaje de reprobados
+
+
+#probando otras cosas
+
+dato
+dato_1
+dato_1_a
+
+SI
+Si
+sI
+SI
+
+'Ejemplo de cadena con \' comillas \' simples'
+
+( A >= 0 )
+( control <> 'stop' )
+
+( A >= 0 ) .y. .no. ( control <> 'stop' )

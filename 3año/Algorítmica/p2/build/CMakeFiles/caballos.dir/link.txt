@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/caballos.dir/main.cpp.o CMakeFiles/caballos.dir/prueba_caballos.cpp.o  -o caballos 

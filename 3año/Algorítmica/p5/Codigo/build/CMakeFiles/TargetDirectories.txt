@@ -1,0 +1,3 @@
+/home/antoniogg/Escritorio/Algoritmica/p5/Codigo/build/CMakeFiles/rebuild_cache.dir
+/home/antoniogg/Escritorio/Algoritmica/p5/Codigo/build/CMakeFiles/main.x.dir
+/home/antoniogg/Escritorio/Algoritmica/p5/Codigo/build/CMakeFiles/edit_cache.dir

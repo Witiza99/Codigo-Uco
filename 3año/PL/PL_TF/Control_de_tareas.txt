@@ -1,0 +1,234 @@
+/****************************************************************\
+|* Fichero de control de tareas para el trabajo de prácticas de	*|
+|* Procesadores de Lenguajes									*|
+|*																*|
+|* 																*|
+|* Comprobar que no se ha olvidado ninguna tarea				*|
+|* 																*|
+|* Nota: este documento se puede mejorar						*|
+\****************************************************************/
+
+
+-----------------------------------------------------------------
+NO EXISTEN CONFLICTOS EN LAS REGLAS DE PRODUCCIÓN:		[ ]
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+PALABRAS RESERVADAS:		[ ]							CHECK
+-----------------------------------------------------------------
+	modulo												[ ]
+	quotient											[ ]
+
+	or 													[ ]
+	and													[ ]
+	not													[ ]
+
+	read												[ ]
+	readstring											[ ]
+
+	write												[ ]
+	writestring											[ ]
+
+	SENTENCIA CONDICIONAL:								[ ]
+		if												[ ]
+		then											[ ]
+		else											[ ]
+		endif											[ ]
+
+	SENTENCIA DE BUCLE MIENTRAS:						[ ]
+		while											[ ]
+		do												[ ]
+		endwhile										[ ]
+
+	SENTENCIA DE BUCLE REPETIR:							[ ]
+		repeat											[ ]
+		until											[ ]
+
+	SENTENCIA DE BUCLE PARA:							[ ]
+		for												[ ]
+		from											[ ]
+		to												[ ]
+		step											[ ]
+		do												[ ]
+		endfor											[ ]
+
+	MACROS:												[ ]
+		clear											[ ]
+		place											[ ]
+
+	NO SE DISTINGUE ENTRE MAYÚSCULAS Y MINÚSCULAS		[ ]
+	LAS PALABRAS RESERVADAS NO SON IDENTIFICADORES		[ ]
+
+
+-----------------------------------------------------------------
+IDENTIFICADORES:		[ ]								CHECK
+-----------------------------------------------------------------
+	COMPUESTOS POR LETRAS, DIGITOS Y SUBRAYADOS 		[ ]
+	COMIENZA POR UNA LETRA								[ ]
+	NO TERMINAN  EN SUBRAYADA							[ ]
+	NO CONTIENEN DOS SUBRAYADOS SEGUIDOS				[ ]
+
+	NO SE DISTINGUE ENTRE MAYÚSCULAS Y MINÚSCULAS		[ ]
+
+
+-----------------------------------------------------------------
+NÚMERO:					[ ]								CHECK
+-----------------------------------------------------------------
+	ENTEROS 											[ ]
+	REALES DE PUNTO FIJO								[ ]
+	REALES NOTACION CIENTIFICA							[ ]
+
+	TODOS SON TRATADOS COMO NÚMERO						[ ]
+
+-----------------------------------------------------------------
+CADENA:					[ ]								CHECK
+-----------------------------------------------------------------
+	CARACTERES DELIMITADOS POR COMILLAS SIMPLES 		[ ]
+	INCLUYE COMILLA SIMPLE CON \ \'						[ ]
+	COMILLAS EXTERIORES NO SON PARTE DE LA CADENA 		[ ]
+
+	INTERPRETA \n y t									[ ]
+-----------------------------------------------------------------
+OPERADORES:				[ ]								CHECK
+-----------------------------------------------------------------
+	NUMERICOS											[ ]
+		ASIGNACION :=									[ ]
+		SUMA +											[ ]
+			UNARIO +2									[ ]
+			BINARIO 2+3									[ ]
+		RESTA -											[ ]
+			UNARIO -2									[ ]
+			BINARIO 2-3									[ ]
+		PRODUCTO *										[ ]
+		DIVISION /										[ ]
+		DIVISION_ENTERA quotient						[ ]
+		MODULO modulo									[ ]
+		POTENCIA **										[ ]
+
+	ALFANUMERICOS										[ ]
+		CONCATENACION ||								[ ]
+
+	RELACIONALES NÚMEROS Y CADENAS						[ ]
+		MENOR QUE <										[ ]
+		MENOR O IGUAL QUE <=							[ ]
+		MAYOR QUE >										[ ]
+		MAYOR O IGUAL QUE >=							[ ]
+		DISTINTO DE <>									[ ]
+
+	LOGICOS												[ ]
+		DISYUNCIÓN or									[ ]
+		CONJUNCIÓN and									[ ]
+		NEGACIÓN   not									[ ]
+
+-----------------------------------------------------------------
+OTROS:					[ ]								CHECK
+-----------------------------------------------------------------
+	COMENTARIOS											[ ]
+		VARIAS LINEAS: DELIMITADORES #	.... #			[ ]
+		UNA LÍNEA: DELIMITADOR @						[ ]
+
+	FIN DE LINEA ;										[ ]
+
+-----------------------------------------------------------------
+SENTENCIAS DE CONTROL:	[ ]								CHECK
+-----------------------------------------------------------------
+	ASIGNACION											[ ]
+		IDENTIFICADOR := EXPR NUMÉRICA					[ ]
+		IDENTIFICADOR := EXPR ALFANUMÉRICA				[ ]
+
+	LECTURA												[ ]
+		read(identificador)								[ ]
+		readstring(identificador)						[ ]
+
+	ESCRITURA											[ ]
+		write											[ ]
+		writestring										[ ]
+
+	SENTENCIAS DE CONTROL								[ ]
+		CONDICIONAL SIMPLE								[ ]
+			if condicional
+				then lista de sentencias
+			endif
+
+		CONDICIONAL COMPUESTA							[ ]
+			if cond
+				then lista de sentencias
+				else lista de sentencias
+			endif
+
+		BUCLE "while"								[ ]
+			while condicional do
+					lista de sentencias
+			endwhile
+
+		BUCLE "repeat"									[ ]
+			repeat
+				lista de sentencias
+			until condicional
+
+		BUCLE "for"									[ ]
+			for identificador
+				from expr numerica 1
+				to expr numerica 2
+				[step expre numerica 3]
+				do
+					lista de sentencias
+			endfor
+
+-----------------------------------------------------------------
+COMANDOS ESPECIALES:	[ ]								CHECK
+-----------------------------------------------------------------
+	clear												[ ]
+	place(expr numérica 1, expr numérica 2)				[ ]
+
+-----------------------------------------------------------------
+OBSERVACIONES:			[ ]								CHECK
+-----------------------------------------------------------------
+	CAMBIO DE TIPO DINÁMICO								[ ]
+
+
+-----------------------------------------------------------------
+CONTROL DE ERRORES:		[ ]								CHECK
+-----------------------------------------------------------------
+	LÉXICOS
+		IDENTIFICADOR MAL ESCRITO 						[ ]
+		SIMBOLO NO PERMITIDO							[ ]
+		OTROS											[ ]
+
+	SINTÁCTICOS											[ ]
+		SENTENCIA DE CONTROL MAL ESCRITA				[ ]
+		SENTENCIA CON ARGUMENTOS INCOMPATIBLES			[ ]
+		OTROS											[ ]
+
+	SEMÁNTICOS											[ ]
+		ARGUMENTOS U OPERANDOS INCOMPATIBLES			[ ]
+
+	DE EJECUCIÓN										[ ]
+		SENTENCIA "PARA" CON BUCLE INFINITO				[ ]
+		FICHERO INEXISTENTE								[ ]
+		FICHERO CON EXTENSIÓN INCORRECTA				[ ]
+		OTROS											[ ]
+
+-----------------------------------------------------------------
+MODOS DE EJECUCIÓN:		[ ]								CHECK
+-----------------------------------------------------------------
+	INTERACTIVO											[ ]
+	DESDE FICHERO										[ ]
+
+-----------------------------------------------------------------
+OPCIONALES:				[ ]								CHECK
+-----------------------------------------------------------------
+	OPERADORES UNARIOS (++, --, etc)					[ ]
+	OPERADIRES ARITMETICOS Y ASIGNACION (+:=,-:=)		[ ]
+
+	SENTENCIA "swicth"									[ ]
+		switch(expresión)
+			case value 1:
+
+			case value 2:
+
+			default:
+
+		endswitch
+
+	OTROS:												[ ]

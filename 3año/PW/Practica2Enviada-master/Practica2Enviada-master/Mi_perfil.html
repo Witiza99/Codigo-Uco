@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--Hacer javascript-->
+<html>
+  <head>
+    <title>Mi perfil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name= "author" content="Rafael Hormigo">
+    <link rel="icon" href="img/logo.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    <link href="css/Estilo.css" type="text/css" rel="stylesheet" />
+    <link href="css/estilos_HF.css" type="text/css" rel="stylesheet" />
+    <script src="js/functionheader.js" type="text/javascript"></script>
+  <script src="js/funciones_Rafa.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- ******************* Inicio Cabecera ********************************   -->
+    <header id="cabecera">
+      <div class="cab-izq">
+        <figure id="logo">
+          <a href="home.html"><img src="img/logo.png" alt="logo_pagina"/></a>
+        </figure>
+      </div>
+      <div class="cab-cent">
+        <section id="seleccion_idioma" name="seleccion_idioma">
+          <select>
+            <option value="ES">ES</option>
+            <option value="EN">EN</option>
+          </select>
+        </section>
+      </div>
+      <section class="titulo">
+        <!-- <img src="img/ciencia3.png" alt=""/> -->
+        <h2 id="titulo">Fund the Science</h2>
+      </section>
+      <!-- ************************************************************** -->
+      <!-- Se controla la muestra del boton con javascript, dependiendo de la pagina que
+       necesite mostrar alguna informacion para el usuario -->
+      <div class="cab-der">
+        <!-- <section>
+          <a href="#" id="acceso">Mi cuenta / Registrarse</a>
+        </section> -->
+      </div>
+      <div class="relleno-cab"></div>
+      <!-- ********************* FIN DE COMENTARIO ********************** -->
+      <!-- ************************************************************** -->
+    </header>
+    <!-- ******************* Fin Cabecera ********************************   -->
+      <div id="cuerpo">
+        <div id="info">
+          <!-- Esta información se traerá de la base de datos -->
+          <div id="info_personal">
+            <p class="parrafo">Nombre</p>
+            <p class="parrafo">Apellido1 Apellido2</p>
+            <p class="parrafo">Nombre@Correo.com</p>
+            <p class="parrafo">555-555-555</p>
+            <p class="parrafo">Calle</p>
+            <p class="parrafo">Ciudad</p>
+            <p class="parrafo">Pa&iacutes</p>
+            <p class="parrafo">Estudios</p>
+            <a href="./MisProyectos.html">Mis proyectos</a>
+            <p class="parrafo">
+              Esto es un p&aacuterrafo con mas informaci&oacuten
+            </p>
+          </div>
+          <button class="button" type="button" name="boton" id="boton"><a href="./Modificar_Datos.html">Modificar Datos</a></button>
+        </div>
+
+        <div id="curriculum">
+          <iframe  src="./pdf/archivo.pdf"></iframe>
+          <br>
+          <button class="button" type="button" id="boton2"><a href="./Curriculum.html" >Modificar curriculum</a></button>
+        </div>
+      </div>
+
+      <!-- ******************* Inicio Footer ********************************   -->
+      <footer id="footer">      
+          <div class="boton_footer esp"><a href="faq.html#faq">FAQ</a></div>
+          <div class="boton_footer"><a href="faq.html#Sobre_nosotros">Contacta con nosotros</a></div>
+          <div class="boton_footer"><a href="faq.html#Contacto">¿Quienes somos?</a></div>
+        </footer>
+        <!-- ******************* Fin Footer ********************************   -->
+  </body>
+</html>

@@ -1,0 +1,3 @@
+/home/i72gogia/Desktop/FSIV/p1/build/CMakeFiles/rebuild_cache.dir
+/home/i72gogia/Desktop/FSIV/p1/build/CMakeFiles/realzar_primer_plano.dir
+/home/i72gogia/Desktop/FSIV/p1/build/CMakeFiles/edit_cache.dir

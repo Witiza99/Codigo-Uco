@@ -1,0 +1,268 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package organized.books;
+
+import javax.swing.ImageIcon;
+
+/**
+ *
+ * @author Antonio
+ */
+
+//componente para modificar la nota de un libro con un valor del 0 al 5
+public class ComponenteNota extends javax.swing.JPanel {
+
+    /**
+     * Creates new form ComponeneNota
+     */
+    
+    int nota;
+    
+    public ComponenteNota() {
+        initComponents();        
+        nota=0;
+        this.dibujarNota();
+    }
+    
+    public ComponenteNota(int valor) {
+        initComponents();
+        nota=valor;
+        this.dibujarNota();
+    }
+    
+    private void dibujarNota() {
+        
+        switch (nota) {
+            case 0:
+                estrella1.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella2.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella3.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella4.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella5.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                label_nota.setText(String.valueOf(nota));
+                break;
+            case 1:
+                estrella1.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella2.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella3.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella4.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella5.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                label_nota.setText(String.valueOf(nota));
+                break;
+            case 2:
+                estrella1.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella2.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella3.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella4.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella5.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                label_nota.setText(String.valueOf(nota));
+                break;
+            case 3:
+                estrella1.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella2.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella3.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella4.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella5.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                label_nota.setText(String.valueOf(nota));
+                break;
+            case 4:
+                estrella1.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella2.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_vacia.png")));
+                estrella3.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella4.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella5.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                label_nota.setText(String.valueOf(nota));
+                break;
+            case 5:
+                estrella1.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella2.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella3.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella4.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                estrella5.setIcon(new ImageIcon(getClass().getResource("/imagenes/estrella_entera.png")));
+                label_nota.setText(String.valueOf(nota));
+                break;
+            default:
+                break;
+        }
+    }
+
+    public int getNota() {
+        return nota;
+    }
+    
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        panel_aux = new javax.swing.JPanel();
+        boton_mas = new javax.swing.JButton();
+        estrella2 = new javax.swing.JLabel();
+        estrella1 = new javax.swing.JLabel();
+        estrella4 = new javax.swing.JLabel();
+        estrella3 = new javax.swing.JLabel();
+        estrella5 = new javax.swing.JLabel();
+        label_nota = new javax.swing.JLabel();
+        boton_menos = new javax.swing.JButton();
+
+        setMaximumSize(new java.awt.Dimension(242, 171));
+        setMinimumSize(new java.awt.Dimension(242, 171));
+        setOpaque(false);
+        setPreferredSize(new java.awt.Dimension(242, 171));
+
+        panel_aux.setMaximumSize(new java.awt.Dimension(242, 171));
+        panel_aux.setOpaque(false);
+        panel_aux.setPreferredSize(new java.awt.Dimension(242, 171));
+
+        boton_mas.setBackground(new java.awt.Color(153, 102, 0));
+        boton_mas.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
+        boton_mas.setText("+");
+        boton_mas.setMaximumSize(new java.awt.Dimension(60, 60));
+        boton_mas.setMinimumSize(new java.awt.Dimension(60, 60));
+        boton_mas.setPreferredSize(new java.awt.Dimension(60, 60));
+        boton_mas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton_masMouseClicked(evt);
+            }
+        });
+
+        estrella2.setMaximumSize(new java.awt.Dimension(24, 24));
+        estrella2.setMinimumSize(new java.awt.Dimension(24, 24));
+        estrella2.setPreferredSize(new java.awt.Dimension(24, 24));
+
+        estrella1.setMaximumSize(new java.awt.Dimension(24, 24));
+        estrella1.setMinimumSize(new java.awt.Dimension(24, 24));
+        estrella1.setPreferredSize(new java.awt.Dimension(24, 24));
+
+        estrella4.setMaximumSize(new java.awt.Dimension(24, 24));
+        estrella4.setMinimumSize(new java.awt.Dimension(24, 24));
+        estrella4.setPreferredSize(new java.awt.Dimension(24, 24));
+
+        estrella3.setMaximumSize(new java.awt.Dimension(24, 24));
+        estrella3.setMinimumSize(new java.awt.Dimension(24, 24));
+        estrella3.setPreferredSize(new java.awt.Dimension(24, 24));
+
+        estrella5.setMaximumSize(new java.awt.Dimension(24, 24));
+        estrella5.setMinimumSize(new java.awt.Dimension(24, 24));
+        estrella5.setPreferredSize(new java.awt.Dimension(24, 24));
+
+        label_nota.setFont(new java.awt.Font("Comic Sans MS", 1, 60)); // NOI18N
+        label_nota.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label_nota.setText("0");
+
+        boton_menos.setBackground(new java.awt.Color(153, 102, 0));
+        boton_menos.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
+        boton_menos.setText("-");
+        boton_menos.setMaximumSize(new java.awt.Dimension(60, 60));
+        boton_menos.setMinimumSize(new java.awt.Dimension(60, 60));
+        boton_menos.setPreferredSize(new java.awt.Dimension(60, 60));
+        boton_menos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton_menosMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel_auxLayout = new javax.swing.GroupLayout(panel_aux);
+        panel_aux.setLayout(panel_auxLayout);
+        panel_auxLayout.setHorizontalGroup(
+            panel_auxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_auxLayout.createSequentialGroup()
+                .addContainerGap(66, Short.MAX_VALUE)
+                .addComponent(estrella3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(estrella2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(estrella4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(boton_mas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_auxLayout.createSequentialGroup()
+                .addGroup(panel_auxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(boton_menos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(estrella1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(label_nota, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(estrella5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40))
+        );
+        panel_auxLayout.setVerticalGroup(
+            panel_auxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_auxLayout.createSequentialGroup()
+                .addGroup(panel_auxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_auxLayout.createSequentialGroup()
+                        .addGroup(panel_auxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(estrella4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(estrella3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(15, 15, 15))
+                    .addGroup(panel_auxLayout.createSequentialGroup()
+                        .addComponent(estrella2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33)))
+                .addComponent(label_nota, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_auxLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addGroup(panel_auxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(estrella1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(estrella5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_auxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(boton_mas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(boton_menos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(panel_aux, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(panel_aux, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void boton_masMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_masMouseClicked
+        nota++;
+        if(nota < 6){
+            this.dibujarNota();
+        }else{
+            nota--;
+        }
+    }//GEN-LAST:event_boton_masMouseClicked
+
+    private void boton_menosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_menosMouseClicked
+        nota--;
+        if(nota > -1){
+            this.dibujarNota();
+        }else{
+            nota++;
+        }
+    }//GEN-LAST:event_boton_menosMouseClicked
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton boton_mas;
+    private javax.swing.JButton boton_menos;
+    private javax.swing.JLabel estrella1;
+    private javax.swing.JLabel estrella2;
+    private javax.swing.JLabel estrella3;
+    private javax.swing.JLabel estrella4;
+    private javax.swing.JLabel estrella5;
+    private javax.swing.JLabel label_nota;
+    private javax.swing.JPanel panel_aux;
+    // End of variables declaration//GEN-END:variables
+}
