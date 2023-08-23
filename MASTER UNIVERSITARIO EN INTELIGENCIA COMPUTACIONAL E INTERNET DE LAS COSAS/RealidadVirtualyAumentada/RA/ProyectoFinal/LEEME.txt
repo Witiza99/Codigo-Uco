@@ -1,0 +1,38 @@
+Ejemplos de ejecución del programa (Resolución usada 640x480):
+
+Imagen sobre escena.
+1->./basicar ../data/Patron.jpg ../data/Escena480x640.mp4 -patch=../data/flor.jpg
+
+Video sobre escena.
+2->./basicar ../data/Patron.jpg ../data/Escena480x640.mp4 -video2=../data/pelea_espadas.mp4
+
+Webcam sobre escena
+3->./basicar ../data/Patron.jpg ../data/Escena480x640.mp4 -video2=0
+
+Ejemplo con grabacion
+4->./basicar ../data/Patron.jpg ../data/Escena480x640.mp4 -video2=0 -save
+
+Ejemplo con keypoint real en vez de binario
+5->./basicar ../data/Patron.jpg ../data/Escena480x640.mp4 -patch=../data/flor.jpg -kp_float
+
+Ejemplo de casa en 3d, se puede poner patch o video ya que solo funcionara la creacion de la casa(se recomienda poner cualquier imagen,
+ya que como es obligatorio poner alguno de los dos tipos, si se elige poner un video, el rendimiento bajara al utilizar la webcam por ejemplo)
+6->./basicar ../data/Patron.jpg ../data/Escena480x640.mp4 -patch=../data/flor.jpg -ancho=20 -largo=30 -calibracion=../camaranexigo/calibNexigoRelBaja.yml
+
+
+Se puede realizar todo lo anterior con otra resolución como 1920x1080 (cambiar la escena a dicha resolucion, esta grabada y se llama Escena.mp4), 
+un ejemplo podría ser el siguiente:
+1-> ./basicar ../data/Patron.jpg ../data/Escena.mp4 -patch=../data/flor.jpg
+
+!!IMPORTANTE, si se trabaja con la calibración, esta debe coincidir con la resolución de la escena, para la resolución anterior usar calibNexigo.yml. Un ejemplo es el siguiente:
+2-> ./basicar ../data/Patron.jpg ../data/Escena.mp4 -patch=../data/flor.jpg -ancho=20 -largo=30 -calibracion=../camaranexigo/calibNexigo.yml
+
+
+!!IMPORTANTE->
+========================================================================================================================================================================================================================================================================================================================================
+
+Respecto al video, al añadir todas las funcionalidades extra fue imposible no superar los 10 minutos ya que era necesario explicar brevemente el código de las partes extra y realizar pruebas de ejecución sobre las mismas. El enlace al video es el siguiente:
+
+-> https://drive.google.com/file/d/1e2CRcmm2q5mV3uil3vBD8ff96SZSZcdJ/view?usp=share_link
+
+========================================================================================================================================================================================================================================================================================================================================

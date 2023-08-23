@@ -1,0 +1,3 @@
+/home/antoniogg/Escritorio/RVRA/Localizar modelo/task3_moodle/build/CMakeFiles/rebuild_cache.dir
+/home/antoniogg/Escritorio/RVRA/Localizar modelo/task3_moodle/build/CMakeFiles/edit_cache.dir
+/home/antoniogg/Escritorio/RVRA/Localizar modelo/task3_moodle/build/CMakeFiles/locateobj.dir

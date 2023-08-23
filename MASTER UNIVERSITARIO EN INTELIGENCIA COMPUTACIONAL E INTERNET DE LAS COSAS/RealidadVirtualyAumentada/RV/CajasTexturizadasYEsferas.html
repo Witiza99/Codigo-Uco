@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="metal-normal"
+            src="ImageTextures/TexturesCom_Metal_Corrugated_1K_normal.jpg">
+            <img id="brick-texture"
+            src="ImageTextures/TexturesCom_Wall_BrickPlain3_2.5x2.5_B_1K_albedo.jpg">
+            <img id="brick-normal"
+            src="ImageTextures/TexturesCom_Wall_BrickPlain3_2.5x2.5_B_1K_normal.jpg">
+        </a-assets>
+        <a-box position = "-2, 1.5, -9" rotation = "0 0 0" 
+               depth="4" height="4" width="4"
+               color = "#FFFFFF" 
+               repeat = "1 1"
+               src = "ImageTextures/TexturesCom_Metal_Corrugated_1K_albedo.jpg"
+               normal-map = "#metal-normal"
+               normal-texture-repeat = "1 1" normal-scale = "1 1"
+               roughness="0.3"
+               scale = "1 1 1">
+            
+        </a-box>
+        
+        <a-box position = "2, 1.5, -9 " rotation = "0 0 0" 
+               depth="4" height="4" width="4"
+               color = "#FFFFFF"
+               src = "#brick-texture"
+               repeat= "2 2"
+               normal-map = "#brick-normal"
+               normal-texture-repeat = "2 2" normal-scale = "1 -1"
+               roughness= "0.3"
+               scale = "1 1 1">
+        </a-box>
+        
+        <a-sphere position = "-2, 1.5, -9" rotation = "0 0 0" 
+                  radius = "1"
+                  color = "blue"
+                  shader = "standard"
+                  roughness= "0.2">
+        </a-sphere>
+        
+        <a-sphere position = "2, 1.5, -9 " rotation = "0 0 0"
+                  radius = "1" 
+                  color = "red"
+                  shader = "standard"
+                  roughness= "0.2">
+        </a-sphere>
+
+        <a-sphere position = "2, 1.5, -9 " rotation = "0 0 0" size = "10"
+                  color = "#FF0000"
+                  radius = "2" 
+                  shader = "flat"
+                  opacity = "0.5"
+                  roughness= "0.2">
+        </a-sphere>
+    </a-scene>
+  </body>
+</html>

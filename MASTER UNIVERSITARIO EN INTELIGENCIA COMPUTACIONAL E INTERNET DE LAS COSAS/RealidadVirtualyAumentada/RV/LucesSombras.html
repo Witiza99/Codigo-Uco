@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="suelo"
+            src="ImageTextures/TexturesCom_Marble_Checkerboard2_1K_albedo.jpg">
+            <img id="mapasuelo"
+            src="ImageTextures/TexturesCom_Marble_Checkerboard2_1K_albedo.tif">
+            <img id="image1"
+            src="Imagenes/imagen1.jpg">
+        </a-assets>
+        <!--<a-asset-item
+            id="room"
+            src="ImageTextures/boy_room/scene.gltf">
+        </a-asset-item>-->
+        <a-asset-item
+            id="room"
+            src="ImageTextures/bulky_knight/scene.gltf">
+        </a-asset-item>
+        <a-entity
+            position =  "0 0 5"><a-camera></a-camera>
+        </a-entity>
+        <!--<a-entity
+            gltf-model = "#room"
+            scale = "0.05 0.05 0.05"
+            shadow="cast:true">
+        </a-entity>-->
+        <a-entity
+            id="caballero"
+            gltf-model = "#room"
+            scale = "60 60 60"
+            shadow="cast:true"
+            animation = "property:position; to:10 0 0; loop:true; dir: alternate;dur:5000"
+            shadow="cast:true">
+        </a-entity>
+        <a-plane 
+            material = "color: #FFFFFF; src: #suelo; repeat: 100 100; normal-map:#mapasuelo; normal-textura-repeat: 100 100" 
+            rotation = "-90 0 0"
+            roughness = "0.2"
+            shadow="receive:true"
+            scale = "1000 1000 1">
+        </a-plane>
+        <a-image src = "#image1" 
+            position = "-2, 2.5, 2.49" >
+        </a-image>
+        <!--<a-plane 
+            color= "grey" 
+            position = "0, 5, 0"
+            scale = "5 0.1 5">
+        </a-plane>-->
+        <a-box
+            id="yellow-box"
+            color="yellow"
+            position = "2, 3, 0"
+            animation="property:rotation;
+            to:0 360 0;
+            dur: 5000;
+            loop:true;
+            easing: linear"></a-box>
+        <a-box
+            color="orange"
+            position = "6, 3, 0"
+            animation="property:rotation;
+            to:0 360 0;
+            dur: 5000;
+            loop:true;
+            easing: linear"></a-box>
+        <!--<a-entity
+            light="type:ambient; color:#BBB">
+        </a-entity>
+        <a-entity
+            light="type:directional;
+            color:#FFFFFF;
+            intensity:0.6;
+            castShadow:true"
+            position="-0.5 1 1">
+        </a-entity>-->
+        <a-entity
+            light="type:point; color:#FF0000; intensity:0.8; distance:100; castShadow: true" 
+            position="0 4 3" 
+            animation="property:light.intensity; from:0.8 to:0; loop:true; dir:alternate; dur:5000">
+        </a-entity>
+        <!--<a-entity
+            light="type:spot"
+            position="0 0 3">
+        </a-entity>-->
+        <!--<a-entity
+            light="type:spot;
+                   target:#yellow-box"
+            position="0 0 3">
+        </a-entity>-->
+        <a-entity
+            light="type:spot;
+                target:#caballero;
+                penumbra:0.1;
+                castShadow:true;
+                angle:45;color:#C40070"
+            position="0 3 0" >
+        </a-entity>
+        <a-sky
+            color = "#212121">
+        </a-sky>
+    </a-scene>
+  </body>
+</html>

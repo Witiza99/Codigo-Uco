@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="suelo"
+            src="ImageTextures/TexturesCom_CrackedPavementA_1K_albedo.jpg">
+            <img id="mapasuelo"
+            src="ImageTextures/TexturesCom_CrackedPavementA_1K_albedo.tif">
+            <img id="cielo"
+            src="ImageTextures/TexturesCom_Skies0389_1_M.jpg">
+            <img id="panorama"
+            src="ImageTextures/Rabanales360.jpg">
+        </a-assets>
+        <a-plane 
+            material = "color: #FFFFFF; src: #suelo; repeat: 50 50; normal-map:#mapasuelo; normal-textura-repeat: 50 50" 
+            rotation = "-90 0 0"
+            roughness = "0.2"
+            scale = "100 100 1">
+        </a-plane>
+        <a-sky
+            src = #panorama
+            radius = "100"
+            rotation = "0 -90 0">
+        </a-sky>
+    </a-scene>
+  </body>
+</html>

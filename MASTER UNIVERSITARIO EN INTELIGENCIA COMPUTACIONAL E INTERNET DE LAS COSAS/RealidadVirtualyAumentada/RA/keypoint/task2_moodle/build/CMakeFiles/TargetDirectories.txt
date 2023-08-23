@@ -1,0 +1,3 @@
+/home/antoniogg/Escritorio/RVRA/keypoint/task2_moodle/build/CMakeFiles/edit_cache.dir
+/home/antoniogg/Escritorio/RVRA/keypoint/task2_moodle/build/CMakeFiles/rebuild_cache.dir
+/home/antoniogg/Escritorio/RVRA/keypoint/task2_moodle/build/CMakeFiles/kps.dir

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="image"
+            src="Imagenes/imagen4.jpg">
+            <img id="suelo"
+            src="ImageTextures/TexturesCom_CrackedPavementA_1K_albedo.jpg">
+            <img id="mapasuelo"
+            src="ImageTextures/TexturesCom_CrackedPavementA_1K_albedo.tif">
+        </a-assets>
+        <a-image src = "#image" 
+            position = "0, 1, 0" 
+            scale = "2 2 1">
+        </a-image>
+        <a-plane 
+            material = "color: #FFFFFF; src: #suelo; repeat: 2.5 2.5; normal-map:#mapasuelo; normal-textura-repeat: 2.5 2.5" 
+            rotation = "-90 0 0"
+            roughness = "0.2"
+            scale = "5 5 1">
+        </a-plane>
+        <a-box position = "2, 1, 0 " rotation = "0 0 0" 
+               depth="4" height="2" width="1"
+               color = "green"
+               scale = "1 1 1">
+        </a-box>
+        <a-cylinder 
+               position="-2 1 0"
+               height = "2"
+               radius = "0.5"
+               color="red">
+        </a-cylinder>
+        <a-entity position="0 0 5">
+            <a-camera active="true"></a-camera>
+        </a-entity>
+        <a-entity position="0 5 5">
+            <a-camera active="false"></a-camera>
+        </a-entity>
+    </a-scene>
+  </body>
+</html>

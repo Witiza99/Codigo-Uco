@@ -1,0 +1,11 @@
+Model Information:
+* title:	Castle On Hills
+* source:	https://sketchfab.com/3d-models/castle-on-hills-b874cb19b42741729b950f6afbdf0dea
+* author:	nigelgoh (https://sketchfab.com/nigelgoh)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Castle On Hills" (https://sketchfab.com/3d-models/castle-on-hills-b874cb19b42741729b950f6afbdf0dea) by nigelgoh (https://sketchfab.com/nigelgoh) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

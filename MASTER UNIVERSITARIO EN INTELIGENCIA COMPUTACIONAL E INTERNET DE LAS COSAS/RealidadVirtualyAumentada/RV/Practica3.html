@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="image1"
+            src="Imagenes/imagen1.jpg">
+            <img id="image2"
+            src="Imagenes/imagen2.jpg">
+            <img id="image3"
+            src="Imagenes/imagen3.jpg">
+            <img id="image4"
+            src="Imagenes/imagen4.jpg">
+            <img id="image5"
+            src="Imagenes/imagen5.jpg">
+        </a-assets>
+        <!-- imagen inicial -->
+        <!-- el height se calcula con la formula IMG height (m) = ( width (m) / IMG width (px) ) * IMG height (px) -->
+        <a-image src = "#image1" 
+            position = "0, 1.5, -3" 
+            width="1" 
+            height="0.75"
+            scale = "3 3 1">
+        </a-image>
+        <!-- imagen grande y centrada -->
+        <!-- (degrees default) + (counterclockwise) - (clockwise) -->
+        <!-- se elimina la mitad del tamaño de theta dado para ajustar a la mitad 180 -ese tamaño -->
+        <a-curvedimage src = "#image2" 
+            theta-length = "90"
+            radius = "0.707"
+            theta-start = "135"
+            position = "0 1.5 0"
+            height = "0.833"
+            scale = "3 3 3">
+        </a-curvedimage> 
+        <!-- imagen pequeña derecha -->
+        <a-curvedimage src = "#image3" 
+            theta-length = "50"
+            radius = "0.5"
+            theta-start = "105"
+            position = "0 1.5 0"
+            height = "0.327"
+            scale = "3 3 3">
+        </a-curvedimage>
+        <!-- imagen pequeña centro -->
+        <a-curvedimage src = "#image4" 
+            theta-length = "50"
+            radius = "0.5"
+            theta-start = "155"
+            position = "0 1.5 0"
+            height = "0.327"
+            scale = "3 3 3">
+        </a-curvedimage>
+        <!-- imagen pequeña izquierda -->
+        <a-curvedimage src = "#image5" 
+            theta-length = "50"
+            radius = "0.5"
+            theta-start = "205"
+            position = "0 1.5 0"
+            height = "0.327"
+            scale = "3 3 3">
+        </a-curvedimage>
+        <!--<a-box
+            color = "red"
+            opacity = "0.5"
+            width = "3"
+            height = "0.1"
+            depth = "3"
+            position = "0 1.5 -1.5">
+        </a-box>-->
+    </a-scene>
+  </body>
+</html>

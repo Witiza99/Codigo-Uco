@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="sky"
+            src="ImageTextures/sunny-sky_2048x1365.jpg">
+        </a-assets>
+        <a-asset-item
+            id="castle"
+            src="ImageTextures/castle_village_scene/scene.gltf">
+        </a-asset-item>
+        <a-asset-item
+            id="pato"
+            src="ImageTextures/duck_non-commercial/scene.gltf">
+        </a-asset-item>
+        <a-asset-item
+            id="caballerhongo"
+            src="ImageTextures/truffle_man/scene.gltf">
+        </a-asset-item>
+        <a-asset-item
+            id="caballero"
+            src="ImageTextures/bulky_knight/scene.gltf">
+        </a-asset-item>
+         <a-entity
+            position =  "0 25 100"><a-camera></a-camera>
+        </a-entity>
+        <a-entity
+            gltf-model = "#castle"
+            scale = "80 80 80"
+            shadow="receive:true"
+            position = "0 20 0">
+        </a-entity>
+        <a-entity
+            position="0 20 5"
+            animation="property:rotation;
+            to:0 360 0;
+            dur: 5000;
+            loop:true;
+            easing: linear">
+            <a-entity
+                id="patoluz"
+                gltf-model = "#pato"
+                scale = "4 4 4"
+                shadow="cast:true"
+                position="2.0 0 0"
+                animation="property:rotation;
+                        to:0 360 0;
+                        dur: 5000;
+                        loop:true;
+                        easing: linear">
+            </a-entity>
+        </a-entity>
+        <a-entity
+            light="type:spot;
+                target:#patoluz;
+                penumbra:0.4;
+                castShadow:true;
+                angle:45;color:#C50090"
+            position="0 25 5" >
+        </a-entity>
+        <a-entity
+            gltf-model = "#caballerhongo"
+            scale = "3 3 3"
+            position="-31 20 26"
+            rotation= "0 90 0"
+            animation="property:scale;
+            to:5 6 4;
+            dur: 4000;
+            loop:true;
+            dir: alternate;
+            easing: easeInOutElastic">
+        </a-entity>
+        <a-entity
+            id="caballeroluz"
+            gltf-model = "#caballero"
+            scale = "60 60 60"
+            position="-9.5 20 45"
+            rotation= "0 15 0"
+            shadow="cast:true"
+            animation__1="property: rotation; 
+            to:0 90 0;
+            dur: 7000;
+            easing: linear;
+            startEvents: animationcomplete__9, loaded;" 
+            animation__2="property: position; 
+            from: -9.5 20 45;
+            to:0 20 44;
+            dur: 6000;
+            easing: linear;
+            startEvents: animationcomplete__1"
+            animation__3="property: rotation; 
+            to:0 0 0;
+            dur: 7000;
+            easing: linear;
+            startEvents: animationcomplete__2;"
+            animation__4="property: position; 
+            from: 0 20 45;
+            to:0 20 50;
+            dur: 6000;
+            easing: linear;
+            startEvents: animationcomplete__3"
+            animation__5="property: rotation; 
+            to:0 -90 0;
+            dur: 7000;
+            easing: linear;
+            startEvents: animationcomplete__4;"
+            animation__6="property: position; 
+            from: 0 20 50;
+            to:-9.5 20 50;
+            dur: 6000;
+            easing: linear;
+            startEvents: animationcomplete__5"
+            animation__7="property: rotation; 
+            to:0 -180 0;
+            dur: 7000;
+            easing: linear;
+            startEvents: animationcomplete__6;"
+            animation__8="property: position; 
+            from: -9.5 20 50;
+            to:-9.5 20 45;
+            dur: 6000;
+            easing: linear;
+            startEvents: animationcomplete__7"
+            animation__9="property: rotation; 
+            to:0 0 0;
+            dur: 7000;
+            easing: linear;
+            startEvents: animationcomplete__8;"
+            foo>
+            <a-entity id="camera" camera look-controls></a-entity>
+        </a-entity>
+        <a-entity
+            light="type:spot;
+                target:#caballeroluz; 
+                color:orange; 
+                intensity:0.9; 
+                angle:35; 
+                castShadow: true" 
+            position="-9.5 26 45" 
+            animation="property:light.intensity; from:0.9 to:0; loop:true; dir:alternate; dur:6000">
+        </a-entity>
+       <a-sky
+            src = #sky
+            rotation = "0 -45 0">
+        </a-sky>
+        <a-entity
+            light="type:ambient;
+                castShadow:true;
+                intensity:0.6;
+                color:#FFFFFF"
+            position="0 10000 5" >
+        </a-entity>
+    </a-scene>
+  </body>
+</html>

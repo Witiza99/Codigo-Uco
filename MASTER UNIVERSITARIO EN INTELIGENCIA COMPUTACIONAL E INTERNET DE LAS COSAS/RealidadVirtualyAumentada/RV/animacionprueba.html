@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="suelo"
+            src="ImageTextures/TexturesCom_Marble_Checkerboard2_1K_albedo.jpg">
+            <img id="mapasuelo"
+            src="ImageTextures/TexturesCom_Marble_Checkerboard2_1K_albedo.tif">
+        </a-assets>
+        <a-plane 
+            material = "color: #FFFFFF; src: #suelo; normal-map:#mapasuelo" 
+            rotation = "-90 0 0"
+            shader = "flat"
+            roughness = "0.2"
+            scale = "5 5 1">
+        </a-plane>
+        <a-entity position="0 0 8">
+            <a-camera active="true"></a-camera>
+        </a-entity>
+        <a-box
+            color="#AA0000"
+            position="0 4.0 0"
+            animation="property:rotation;
+            to:0 360 0;
+            dur: 5000;
+            loop:true;
+            easing: linear"></a-box>
+        <a-entity
+            position="0 4.0 0"
+            animation="property:rotation;
+            to:0 360 0;
+            dur: 5000;
+            loop:true;
+            easing: linear">
+            <a-box 
+                    color="Green"
+                    position="2.0 0 0"
+                    animation="property:rotation;
+                    to:0 360 0;
+                    dur: 5000;
+                    loop:true;
+                    easing: linear">
+            </a-box>
+        </a-entity>
+        <a-box
+            color="#FFAA00"
+            position="0 0.5 0"
+            animation="property:position;
+            from: -2 0.5 -2;
+            to:-2 0.5 2;
+            dur: 5000;
+            loop:true;
+            dir: alternate;
+            easing: linear">
+        </a-box>
+        <a-box
+            color="#FFAA00"
+            position="2 0.5 0"
+            animation="property:scale;
+            to:0.2 1 5;
+            dur: 3000;
+            loop:true;
+            dir: alternate;
+            easing: easeOutElastic">
+        </a-box>
+        <a-sphere
+            color="#0000AA"
+            position="0 2.25 0"
+            radius = "0.5"
+            animation = "property:material.color;
+            from: #00AAFF;
+            to:#0000AA;
+            dur: 1500;
+            dir: alternate;
+            loop:true">
+        </a-sphere>
+        <a-cone
+            color="#484848"
+            position="0 0.5 0"
+            animation = "property:material.opacity;
+            from: 1;
+            to: 0;
+            dur: 1500;
+            dir: alternate;
+            loop:true">
+        </a-cone>
+       </a-scene>
+  </body>
+</html>

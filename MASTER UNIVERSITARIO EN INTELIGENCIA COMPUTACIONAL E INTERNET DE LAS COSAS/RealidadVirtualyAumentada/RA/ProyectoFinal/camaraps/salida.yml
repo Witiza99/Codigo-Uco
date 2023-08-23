@@ -1,0 +1,28 @@
+%YAML:1.0
+---
+image-width: 640
+image-height: 480
+error: 2.2075459361076355e-01
+camera-matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 5.3799681327392886e+02, 0., 3.2988845240530208e+02, 0.,
+       5.4194012998798382e+02, 1.9970823549718864e+02, 0., 0., 1. ]
+distortion-coefficients: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -1.1766590209441799e-01, 1.9864727216965633e-01,
+       -3.2669865122522501e-03, 1.3277349921291847e-03,
+       -3.4703431933294948e-01 ]
+rvec: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ 0., 0., 0. ]
+tvec: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ 0., 0., 0. ]
