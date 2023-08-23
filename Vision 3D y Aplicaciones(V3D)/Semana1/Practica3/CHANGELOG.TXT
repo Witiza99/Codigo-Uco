@@ -1,0 +1,2 @@
+1.0
+- Versión inicial desde la versión 1.6 de master.

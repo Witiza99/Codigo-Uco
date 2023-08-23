@@ -1,0 +1,10 @@
+Los parametros de entrada para este ejercicio son:
+La imagen
+El modo de funcionamiento funcion o f
+	siendo 1 para la version "recorriendo la imagen"
+	siendo 2 para la version "usando código vectorizado con la función opencv cv::minMaxLoc"
+
+./introduccionOpencv ../data/avion.png -f=1
+./introduccionOpencv ../data/avion.png -f=2
+./introduccionOpencv ../data/ciclista_original.jpg -f=1
+./introduccionOpencv ../data/ciclista_original.jpg -f=2
