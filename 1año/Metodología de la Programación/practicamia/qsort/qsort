@@ -1,0 +1,4 @@
+int *reservavector(int *cantidad);
+void rellenavector(int *v, int *cantidad);
+void imprimevector(int *v,int *cantidad);
+int qsort(const void *e1, const void *e2);

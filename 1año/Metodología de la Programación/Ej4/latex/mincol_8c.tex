@@ -1,0 +1,39 @@
+\hypertarget{mincol_8c}{}\section{mincol.\+c File Reference}
+\label{mincol_8c}\index{mincol.\+c@{mincol.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+Include dependency graph for mincol.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{mincol_8c_a0c3c83b3f0bb31b07e158ad39e953945}{min\+Col} (int $\ast$$\ast$matriz, int n\+Fil, int n\+Col)
+\begin{DoxyCompactList}\small\item\em funcion que devuelve un vector con los minimos de cada columna \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{mincol.\+c@{mincol.\+c}!min\+Col@{min\+Col}}
+\index{min\+Col@{min\+Col}!mincol.\+c@{mincol.\+c}}
+\subsubsection[{\texorpdfstring{min\+Col(int $\ast$$\ast$matriz, int n\+Fil, int n\+Col)}{minCol(int **matriz, int nFil, int nCol)}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ min\+Col (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{matriz, }
+\item[{int}]{n\+Fil, }
+\item[{int}]{n\+Col}
+\end{DoxyParamCaption}
+)}\hypertarget{mincol_8c_a0c3c83b3f0bb31b07e158ad39e953945}{}\label{mincol_8c_a0c3c83b3f0bb31b07e158ad39e953945}
+
+
+funcion que devuelve un vector con los minimos de cada columna 
+
+Esta funcion primeramente reserva memoria para para el vector dinamico donde guardara todos los elementos menores de cada columna de tal forma que se recorre la matriz por columnas almacenando el menor. 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$matriz} & puntero a puntero de los elementos de la matriz \\
+\hline
+{\em n\+Fil} & numero de filas. \\
+\hline
+{\em n\+Col} & numero de columnas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector de enteros con los menores de cada columna. 
+\end{DoxyReturn}

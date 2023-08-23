@@ -1,0 +1,153 @@
+\hypertarget{func_8h}{}\section{func.\+h File Reference}
+\label{func_8h}\index{func.\+h@{func.\+h}}
+
+
+Este es el punto h de la funcion.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$$\ast$ \hyperlink{func_8h_a30ee790bb9efa2a4e4e788a608c7c1e0}{reservar\+Memoria} (int n\+Fil, int n\+Col)
+\begin{DoxyCompactList}\small\item\em funcion que reserva memoria para la matriz \end{DoxyCompactList}\item 
+void \hyperlink{func_8h_a8b6f82a062e7dc44804175d315ce66b0}{rellena\+Matriz} (int $\ast$$\ast$matriz, int n\+Fil, int n\+Col)
+\begin{DoxyCompactList}\small\item\em funcion que rellena la matriz. \end{DoxyCompactList}\item 
+void \hyperlink{func_8h_a5bf79a38c110ff51fb779540789d2785}{imprime\+Matriz} (int $\ast$$\ast$matriz, int n\+Fil, int n\+Col)
+\begin{DoxyCompactList}\small\item\em funcion que imprime la matriz \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{func_8h_a84e00c33f631fc247d2a1abc844808c0}{min\+Col} (int $\ast$$\ast$matriz, int n\+Fil, int n\+Col)
+\begin{DoxyCompactList}\small\item\em funcion que devuelve un vector con los minimos de cada columna \end{DoxyCompactList}\item 
+void \hyperlink{func_8h_afe289771ce434c3761c9c0b4e238e8d6}{liberar\+Memoria} (int $\ast$$\ast$matriz, int n\+Fil, int $\ast$vector, int n\+Col)
+\begin{DoxyCompactList}\small\item\em Esta funcion libera la memoria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Este es el punto h de la funcion. 
+
+En este punto h se encuentran las llamadas a funcion para que el main pueda buscarlos dentro de nuestro fichero. 
+
+\subsection{Function Documentation}
+\index{func.\+h@{func.\+h}!imprime\+Matriz@{imprime\+Matriz}}
+\index{imprime\+Matriz@{imprime\+Matriz}!func.\+h@{func.\+h}}
+\subsubsection[{\texorpdfstring{imprime\+Matriz(int $\ast$$\ast$matriz, int n\+Fil, int n\+Col)}{imprimeMatriz(int **matriz, int nFil, int nCol)}}]{\setlength{\rightskip}{0pt plus 5cm}void imprime\+Matriz (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{matriz, }
+\item[{int}]{n\+Fil, }
+\item[{int}]{n\+Col}
+\end{DoxyParamCaption}
+)}\hypertarget{func_8h_a5bf79a38c110ff51fb779540789d2785}{}\label{func_8h_a5bf79a38c110ff51fb779540789d2785}
+
+
+funcion que imprime la matriz 
+
+Esta funcion imprime todos los elementos contenidos en la matriz. 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$matriz} & puntero a puntero de los elementos de la matriz \\
+\hline
+{\em n\+Fil} & numero de filas. \\
+\hline
+{\em n\+Col} & numero de columnas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nada 
+\end{DoxyReturn}
+\index{func.\+h@{func.\+h}!liberar\+Memoria@{liberar\+Memoria}}
+\index{liberar\+Memoria@{liberar\+Memoria}!func.\+h@{func.\+h}}
+\subsubsection[{\texorpdfstring{liberar\+Memoria(int $\ast$$\ast$matriz, int n\+Fil, int $\ast$vector, int n\+Col)}{liberarMemoria(int **matriz, int nFil, int *vector, int nCol)}}]{\setlength{\rightskip}{0pt plus 5cm}void liberar\+Memoria (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{matriz, }
+\item[{int}]{n\+Fil, }
+\item[{int $\ast$}]{vector, }
+\item[{int}]{n\+Col}
+\end{DoxyParamCaption}
+)}\hypertarget{func_8h_afe289771ce434c3761c9c0b4e238e8d6}{}\label{func_8h_afe289771ce434c3761c9c0b4e238e8d6}
+
+
+Esta funcion libera la memoria. 
+
+Esta funcion libera la memoria tanto de la matriz dinamica como del vector dinamico. 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$matriz} & matriz de punteros a punteros a los elementos \\
+\hline
+{\em n\+Fil} & numero de filas. \\
+\hline
+{\em n\+Col} & numero de columnas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nada 
+\end{DoxyReturn}
+\index{func.\+h@{func.\+h}!min\+Col@{min\+Col}}
+\index{min\+Col@{min\+Col}!func.\+h@{func.\+h}}
+\subsubsection[{\texorpdfstring{min\+Col(int $\ast$$\ast$matriz, int n\+Fil, int n\+Col)}{minCol(int **matriz, int nFil, int nCol)}}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ min\+Col (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{matriz, }
+\item[{int}]{n\+Fil, }
+\item[{int}]{n\+Col}
+\end{DoxyParamCaption}
+)}\hypertarget{func_8h_a84e00c33f631fc247d2a1abc844808c0}{}\label{func_8h_a84e00c33f631fc247d2a1abc844808c0}
+
+
+funcion que devuelve un vector con los minimos de cada columna 
+
+Esta funcion primeramente reserva memoria para para el vector dinamico donde guardara todos los elementos menores de cada columna de tal forma que se recorre la matriz por columnas almacenando el menor. 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$matriz} & puntero a puntero de los elementos de la matriz \\
+\hline
+{\em n\+Fil} & numero de filas. \\
+\hline
+{\em n\+Col} & numero de columnas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector de enteros con los menores de cada columna. 
+\end{DoxyReturn}
+\index{func.\+h@{func.\+h}!rellena\+Matriz@{rellena\+Matriz}}
+\index{rellena\+Matriz@{rellena\+Matriz}!func.\+h@{func.\+h}}
+\subsubsection[{\texorpdfstring{rellena\+Matriz(int $\ast$$\ast$matriz, int n\+Fil, int n\+Col)}{rellenaMatriz(int **matriz, int nFil, int nCol)}}]{\setlength{\rightskip}{0pt plus 5cm}void rellena\+Matriz (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{matriz, }
+\item[{int}]{n\+Fil, }
+\item[{int}]{n\+Col}
+\end{DoxyParamCaption}
+)}\hypertarget{func_8h_a8b6f82a062e7dc44804175d315ce66b0}{}\label{func_8h_a8b6f82a062e7dc44804175d315ce66b0}
+
+
+funcion que rellena la matriz. 
+
+Esta funcion rellena la matriz de numeros aleatorios comprendidos entre 1 y 20. 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$matriz} & puntero a puntero de los elementos de la matriz \\
+\hline
+{\em n\+Fil} & numero de filas. \\
+\hline
+{\em n\+Col} & numero de columnas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nada 
+\end{DoxyReturn}
+\index{func.\+h@{func.\+h}!reservar\+Memoria@{reservar\+Memoria}}
+\index{reservar\+Memoria@{reservar\+Memoria}!func.\+h@{func.\+h}}
+\subsubsection[{\texorpdfstring{reservar\+Memoria(int n\+Fil, int n\+Col)}{reservarMemoria(int nFil, int nCol)}}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$$\ast$ reservar\+Memoria (
+\begin{DoxyParamCaption}
+\item[{int}]{n\+Fil, }
+\item[{int}]{n\+Col}
+\end{DoxyParamCaption}
+)}\hypertarget{func_8h_a30ee790bb9efa2a4e4e788a608c7c1e0}{}\label{func_8h_a30ee790bb9efa2a4e4e788a608c7c1e0}
+
+
+funcion que reserva memoria para la matriz 
+
+En esta funcion se realiza la reserva de memoria en la pila, en el caso de que no se pudiera se da un error y aborta el programa. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Fil} & numero de filas. \\
+\hline
+{\em n\+Col} & numero de columnas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La reserva de memoria de enteros de la matriz. 
+\end{DoxyReturn}

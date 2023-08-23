@@ -1,0 +1,9 @@
+La silla
+el
+10.000000 5
+La estanteria
+nosotros
+100.000000 2
+La escoba
+Pilar
+25.000000 4

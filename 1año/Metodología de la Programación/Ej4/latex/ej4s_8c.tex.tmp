@@ -1,0 +1,67 @@
+\hypertarget{ej4s_8c}{}\section{ej4s.\+c File Reference}
+\label{ej4s_8c}\index{ej4s.\+c@{ej4s.\+c}}
+
+
+Este ejercicio repasa todo lo de matrices y doxygen.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}func.\+h\char`\"{}}\\*
+Include dependency graph for ej4s.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ej4s_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em funcion main \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Este ejercicio repasa todo lo de matrices y doxygen. 
+
+En concreto se nos pide hacer un punto h con sus respectivos .c como reservar memoria para matriz, rellenar matriz, imprimir matriz, funcion mincol, yliberar memoria.
+
+\begin{DoxyAuthor}{Author}
+Antonio Gómez Giménez 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Hoy 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{ej4s.\+c@{ej4s.\+c}!main@{main}}
+\index{main@{main}!ej4s.\+c@{ej4s.\+c}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ej4s_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{ej4s_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+funcion main 
+
+En esta funcion se llaman al resto de funciones \begin{DoxyReturn}{Returns}
+nada 
+\end{DoxyReturn}
+$<$
+\begin{DoxyParams}{Parameters}
+{\em n\+Col} & numero de columnas\\
+\hline
+\end{DoxyParams}
+$<$
+\begin{DoxyParams}{Parameters}
+{\em n\+Fil} & numero de filas\\
+\hline
+\end{DoxyParams}
+$<$
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$matriz} & matriz dinamica\\
+\hline
+\end{DoxyParams}
+$<$
+\begin{DoxyParams}{Parameters}
+{\em $\ast$vector} & dinamico \\
+\hline
+\end{DoxyParams}
